@@ -1,19 +1,12 @@
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="h-[100vh] bg-slate-900">
 
-      </header>
 
       <main>
-
+        <h1>Hello world</h1>
       </main>
 
-      <footer>
-
-      </footer>
     </div>
   );
 }
