@@ -1,21 +1,14 @@
-import './App.css';
-
+import EventList from "./components/EventList";
+import TreeCard from "./components/TreeCard";
+import "./App.css";
+//munis = i check if the fonts & colors are working
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-
-      </header>
-
-      <main>
-
-      </main>
-
-      <footer>
-
-      </footer>
-    </div>
-  );
+    return (
+        <div>
+            <EventList />
+            <TreeCard />
+        </div>
+    );
 }
 
 export default App;
