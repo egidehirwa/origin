@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Righteous";
+    src: url(/src/fonts/Righteous-Regular.ttf);
+    font-family: "Urbanist";
+    src: url(/src/fonts/MontserratAlternates-Medium.ttf);
+}
