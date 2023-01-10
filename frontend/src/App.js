@@ -5,7 +5,7 @@ import "./App.css";
 //munis (line 10-13) = i check if the fonts & colors are working
 function App() {
     return (
-        <div className="App">
+        <div className="App bg-greenish">
             <header className="App-header"></header>
             <div>
                 <EventList />

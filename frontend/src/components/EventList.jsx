@@ -6,8 +6,6 @@ import DateList from "./DateList";
 function EventList() {
     return (
         <div>
-            <h1 className="text-xl font-primaryFont">primary font is working</h1>
-            <p className="font-secondaryFont">secondary font is working</p>
             <Calendar />
             <DateList />
         </div>
