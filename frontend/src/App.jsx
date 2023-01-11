@@ -1,18 +1,14 @@
-import Profile from "./components/Profile";
-import EventList from "./components/EventList";
 import TreeCard from "./components/TreeCard";
 
 import "./App.css";
 
-//Dashboard Components (line 10-16)
+// * Dashboard Components (line 8-12)
 function App() {
     return (
-        <div className="app bg-greenish">
+        <div className="app bg-gradient-to-tr from-cyan-900 to-stone-400">
             <header className="app-header"></header>
             <div>
-                <Profile />
                 <TreeCard />
-                <EventList />
             </div>
             <main></main>
             <footer></footer>
