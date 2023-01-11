@@ -1,15 +1,18 @@
+import Profile from "./components/Profile";
 import EventList from "./components/EventList";
 import TreeCard from "./components/TreeCard";
+
 import "./App.css";
 
-//munis (line 10-13) = i check if the fonts & colors are working
+//Dashboard Components (line 10-16)
 function App() {
     return (
-        <div className="App bg-greenish">
-            <header className="App-header"></header>
+        <div className="app bg-greenish">
+            <header className="app-header"></header>
             <div>
-                <EventList />
+                <Profile />
                 <TreeCard />
+                <EventList />
             </div>
             <main></main>
             <footer></footer>

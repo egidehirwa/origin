@@ -8,3 +8,8 @@
     font-family: "Urbanist";
     src: url(/src/fonts/MontserratAlternates-Medium.ttf);
 }
+
+body {
+    display: flex;
+    justify-content: center;
+}

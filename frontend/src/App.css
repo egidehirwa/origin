@@ -1,5 +1,13 @@
 .app {
+    width: 375px;
+    background-color: #4f645c;
 }
+
+/** ----------------------------------------------------------------**/
+/* 1. Can we delete the codes below?
+/* 2. I have hidden the background code below. To use our own background color (line-96)
+/* 3. i have hidden @font-face it was giving an error (line-12)
+/** ----------------------------------------------------------------**/
 
 /* @font-face {
   font-family: "Josefin Sans", sans-serif;
