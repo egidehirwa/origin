@@ -3,8 +3,6 @@ import React from "react";
 function ProfileHeader({ title, imageUrl, body }) {
     return (
         <div className=" max-w-sm rounded overflow-hidden shadow-lg">
-        
-
             <img className="" src="images/line_pic.png" alt="cream_line" />
 
             <div className="px-6 py-4">
