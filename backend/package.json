@@ -4,12 +4,26 @@
     "body-parser": "^1.20.1",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
     "flash": "^1.1.0",
     "jsonwebtoken": "^9.0.0",
+    "nodemon": "^2.0.20",
     "passport": "^0.6.0",
+    "passport-facebook": "^3.0.0",
     "pg": "^8.8.0",
     "session": "^0.1.0"
-  }
+  },
+  "name": "backend",
+  "description": "origin backend",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "origin team",
+  "license": "ISC"
 }
