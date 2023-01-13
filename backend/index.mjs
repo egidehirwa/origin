@@ -10,8 +10,8 @@ dotenv.config()
 
 
 passport.use(new FacebookStrategy({
-    clientID : '1377880669709451',
-    clientSecret : '066e4e587ee668e1425804619dbb2d0d', 
+    clientID : FACEBOOK_APP_ID,
+    clientSecret : FACEBOOK_APP_SECRET, 
     callbackURL : 'http://localhost:3000/auth/facebook/callback'
 },
 
@@ -62,8 +62,8 @@ const app = express()
 dotenv.config()
 
 passport.use(new FacebookStrategy({
-    clientID : '1377880669709451',
-    clientSecret : '066e4e587ee668e1425804619dbb2d0d', 
+    clientID : FACEBOOK_APP_ID,
+    clientSecret : FACEBOOK_APP_SECRET, 
     callbackURL : 'http://localhost:3000/auth/facebook/callback'
 },
 async function(accessToken, refreshToken, profile, done) {
