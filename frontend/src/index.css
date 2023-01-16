@@ -14,6 +14,23 @@ body {
     justify-content: center;
 }
 
+
+.mainHeader {
+    @apply p-2 font-primaryFont text-xl text-lighcream;
+}
+
+.header1 {
+    @apply p-2 font-secondaryFont text-lighcream;
+}
+
+.textAreaWhite {
+    @apply font-secondaryFont text-white;
+}
+
+.textAreaCream {
+    @apply pl-10 font-secondaryFont text-creemish;
+}
+
 #root {
     min-width: 100%;
 }

@@ -1,4 +1,5 @@
-// * Dashboard Components (line 8-12)
+import ProfileHeader from "./components/userProfile/ProfileHeader";
+import ProfileInformation from "./components/userProfile/ProfileInformation";
 import FooterMobile from "./components/Footer/navFooter";
 import ProfileDetails from "./components/userProfile/profileDetails";
 
@@ -6,7 +7,10 @@ import ProfileDetails from "./components/userProfile/profileDetails";
 function App() {
     return (
         <div className="app">
-            <header className="app-header"></header>
+            <header className="app-header">
+                <ProfileHeader />
+                <ProfileInformation />
+            </header>
             <main>
                 <ProfileDetails />
             </main>
