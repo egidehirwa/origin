@@ -31,9 +31,6 @@ async function(accessToken, refreshToken, profile, done) {
 }
 ))
 
-
-
-
 facebookRouter.get('/facebook', passport.authenticate('facebook'))
 
 facebookRouter.get('/facebook/callback', 

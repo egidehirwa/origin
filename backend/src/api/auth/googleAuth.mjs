@@ -9,6 +9,8 @@ import express from 'express'
 const googleRouter = express.Router()
 dotenv.config()
 
+const APIKey = 'AIzaSyAUd9H-t8MSHzAAUu7Jfy0MBjynSf4KM8U'
+
 passport.use(new GoogleStrategy({
         clientID: process.env.GOOGLE_CLIENT_ID,
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
