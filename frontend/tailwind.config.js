@@ -33,7 +33,7 @@ module.exports = {
                 greenish: "#4F645C",
                 peps: "#5E3239",
                 creemish: "#DAC2A2",
-                lighcream: "#EBE3D5",
+                lightcream: "#EBE3D5",
             },
             borderRadius: {
                 default: "4px",
@@ -51,6 +51,12 @@ module.exports = {
                 lg: "24px",
                 xl: "48px",
             },
+            maxWidth: {
+                "1": "100%",
+                "3/4": "75%",
+                "1/2": "50%",
+                "1/4": "25%"
+            }
         },
     },
     plugins: [],
