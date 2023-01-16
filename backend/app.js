@@ -8,6 +8,33 @@ const passport = require('passport');
 const session = require('express-session')
 const router = express.Router()
 const expressEjsLayout = require('express-ejs-layouts')
+const cors = require('cors')
+
+
+//Connect database
+require("./configs/dotenv");
+const client = require("./configs/database");
+
+client.connect((err) =>{
+
+    if(err){
+
+        console.log(err);
+    }
+
+    else{
+        console.log("Data logging initiated")
+    }
+})
+
+const user = require("./routes/user");
+
+app.use("/user", user); //Routes for /user endpoint of API
+
+app.post("/user/login", (req,res)=>{
+    res.status(200).send('LOGIN')
+})
+
 
 //middleware fonction
 
