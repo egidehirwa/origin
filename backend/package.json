@@ -1,12 +1,4 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.mjs",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.mjs"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -17,11 +9,14 @@
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "flash": "^1.1.0",
     "jsonwebtoken": "^9.0.0",
+    "nodemon": "^2.0.20",
     "passport": "^0.6.0",
     "passport-facebook": "^3.0.0",
-    "pg": "^8.8.0"
-  }
+    "pg": "^8.8.0",
+    "session": "^0.1.0"
   },
   "name": "backend",
   "description": "origin backend",
@@ -31,7 +26,5 @@
   "scripts": {
     "dev": "nodemon index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "origin team",
-  "license": "ISC"
+  }
 }
