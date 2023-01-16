@@ -18,8 +18,7 @@ async function(accessToken, refreshToken, profile, done) {
     try {
         let user_profile  = await client.query(`SELECT * FROM profile WHERE facebook_id = '${profile.id}'`)
         console.log(profile.id)
-        console.log(user_profile)
-        console.log(user_profile.length)
+        console.log(user_profile.length);
         if (user_profile.length > 0) {
             return done(null, {redirect: `/profile/${user_profile[0].id}`})
         } else {
