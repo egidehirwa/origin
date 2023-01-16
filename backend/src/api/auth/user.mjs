@@ -1,4 +1,4 @@
-const express = require('express')
+import express from ('express')
 const router = express.Router()
 
 //login handle
@@ -14,4 +14,4 @@ router.get('/register',(req,res) =>{
 //Register handle
 router.post('/register')
 
-module.exports = router
+export default  router

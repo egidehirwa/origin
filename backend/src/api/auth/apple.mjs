@@ -1,4 +1,4 @@
-const passport = require('passport')
+import passport  from 'passport'
 
 const APPLE_CLIENT_ID = 7
 const APPLE_CLIENT_SECRET =8

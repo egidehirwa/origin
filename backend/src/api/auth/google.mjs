@@ -1,4 +1,4 @@
-const passport = require('passport');
+import passport from 'passport';
 const GoogleStrategy = require('passport-google-oauth2').Strategy;
 
 const GOOGLE_CLIENT_ID = '438402548050-jlnud9omp6972j0qitu4kse97tvlj6m7.apps.googleusercontent.com'

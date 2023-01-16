@@ -1,10 +1,10 @@
-const express = require('express')
+import express from 'express'
 const router = express.Router()
 
-const {register} = require("../controller/register")
+import{register} from "../src/api/auth/register.mjs"
 router.post('/register', register)
 
-const {login} = require("../controller/login")
+import login from "../src/api/auth/login.mjs"
 router.post('/login',login)
 
-module.exports = router;
+export default router;

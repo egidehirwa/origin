@@ -1,33 +1,22 @@
 const PORT = 5000
-const db = require('pg')
-const { profile } = require('console');
-const express = require('express');
+import pg from 'pg'
+import profile from 'console';
+import express from 'express'
 const app = express()
-require('./src/api/auth/google');
-const passport = require('passport');
-const session = require('express-session')
+import('./src/api/auth/google');
+import passport from 'passport'
+import express_session from 'express-session'
 const router = express.Router()
-const expressEjsLayout = require('express-ejs-layouts')
-const cors = require('cors')
+import cors from 'cors'
 
 
 //Connect database
-require("./configs/dotenv");
-const client = require("./configs/database");
+import("./configs/dotenv");
+const client = import("./configs/database");
 
-client.connect((err) =>{
 
-    if(err){
 
-        console.log(err);
-    }
-
-    else{
-        console.log("Data logging initiated")
-    }
-})
-
-const user = require("./routes/user");
+import user from "../backend/routes/user.mjs";
 
 app.use("/user", user); //Routes for /user endpoint of API
 

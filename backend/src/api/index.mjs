@@ -1,4 +1,4 @@
-const express = require('express')
+import express from ('express')
 const router = express.Router()
 
 //login page
@@ -13,4 +13,4 @@ router.get('/register', (req,res) =>{
     res.render('register')
 })
 
-module.exports = router
+export default router
