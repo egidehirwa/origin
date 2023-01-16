@@ -12,9 +12,9 @@ function App() {
         <Route path="/tree" element={<TreePage />} />
         <Route path="/events" element={<EventsPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<AboutPage />} />
-        <Route path="/shop" element={<AboutPage />} />
-        <Route path="/legal" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/shop" element={<ShopPage />} />
+        <Route path="/legal" element={<LegalPolicyPage />} />
     </Routes>
 }
 
