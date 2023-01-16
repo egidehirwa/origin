@@ -15,6 +15,8 @@
     "nodemon": "^2.0.20",
     "passport": "^0.6.0",
     "passport-facebook": "^3.0.0",
+    "passport-google": "^0.3.0",
+    "passport-google-oauth2": "^0.2.0",
     "pg": "^8.8.0",
     "session": "^0.1.0"
   },
@@ -22,7 +24,6 @@
   "description": "origin backend",
   "version": "1.0.0",
   "main": "index.mjs",
-  "devDependencies": {},
   "scripts": {
     "dev": "nodemon index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
