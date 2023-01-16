@@ -8,6 +8,9 @@
     "flash": "^1.1.0",
     "jsonwebtoken": "^9.0.0",
     "passport": "^0.6.0",
-    "session": "^0.1.0"
-  }
+    "session": "^0.1.0",
+     "cors": "^2.8.5",
+     "pg": "^8.8.0",
+     "nodemon": "^2.0.20",
+   }
 }
