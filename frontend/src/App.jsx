@@ -1,4 +1,4 @@
-import ProfileHeader from "./components/userProfile/ProfileHeader";
+import ProfileHeader from "./components/userProfile/profileHeader";
 import ProfileInformation from "./components/userProfile/ProfileInformation";
 import FooterMobile from "./components/Footer/navFooter";
 import ProfileDetails from "./components/userProfile/profileDetails";

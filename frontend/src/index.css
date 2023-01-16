@@ -16,11 +16,11 @@ body {
 
 
 .mainHeader {
-    @apply p-2 font-primaryFont text-xl text-lighcream;
+    @apply p-2 font-primaryFont text-xl text-lightcream;
 }
 
 .header1 {
-    @apply p-2 font-secondaryFont text-lighcream;
+    @apply p-2 font-secondaryFont text-lightcream;
 }
 
 .textAreaWhite {
