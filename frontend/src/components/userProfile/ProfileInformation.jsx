@@ -12,9 +12,9 @@ function getElement(title, iconUrl, info) {
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 25" stroke-width="1.5" stroke="#fffbeb" class="w-8 h-8">
                     <path stroke-linecap="round" stroke-linejoin="round" d={iconUrl} />
                 </svg>
-                <div className="p-2 font-secondaryFont   text-lighcream">{title}</div>
+                <div className="header1">{title}</div>
             </div>
-            <div className="pl-10 font-secondaryFont text-creemish">{info}</div>
+            <div className="textAreaCream">{info}</div>
         </div>
     );
 }
@@ -50,7 +50,7 @@ function ProfileInformation({ title, iconUrl, info }) {
     return (
         <div>
             <div className=" px-6 py-4">
-                <div className="py-4 font-primaryFont text-xl text-lighcream">Informations</div>
+                <div className="mainHeader">Informations</div>
                 {getInformation()}
             </div>
         </div>
