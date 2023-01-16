@@ -9,7 +9,7 @@ const client = new Client({
     user: 'origin_admin',
     host: 'localhost',
     database: 'origin_db',
-    password: 'Becode-1234',
+    password: process.env.DATABASE_PWD,
     port: 5432,
 });
 
