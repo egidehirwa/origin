@@ -2,7 +2,16 @@ import LogInButton from "./buttons"
 import LogOutButton from "./buttons"
 import { ShoppingCartIcon } from '@heroicons/react/24/solid'
 
-const desktopHeaderLogIn = () => {
+const DesktopHeader = () => {
+    return (
+        <>
+        <DesktopHeaderLogIn />
+        <DesktopHeaderLogOut />
+        </>
+    )
+}
+
+const DesktopHeaderLogIn = () => {
     return (
         <div className="flex flex-row  ">
             <img className="iteams-left" src="./origin_logo_cream.png" alt="origin_logo" />
@@ -20,7 +29,7 @@ const desktopHeaderLogIn = () => {
     )
 }
 
-const desktopHeaderLogOut = () => {
+const DesktopHeaderLogOut = () => {
     return (
         <div className="flex flex-row  ">
             <img className="iteams-left" src="./origin_logo_cream.png" alt="origin_logo" />
@@ -38,4 +47,4 @@ const desktopHeaderLogOut = () => {
     )
 }
 
-export {desktopHeaderLogIn, desktopHeaderLogOut }
+export default DesktopHeader;
