@@ -1,8 +1,4 @@
-export default function LogInButton () {
-    // return ()
-}
+const LogInButton = () => {}
+const LogOutButton = () => {}
 
-// export function LogOutButton () {
-//     return ()
-
-// }
+export {LogInButton, LogOutButton }
