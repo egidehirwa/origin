@@ -1,8 +1,9 @@
-// import DesktopHeader from "./desktopHeader"
+import DesktopHeader from "../components/header/desktopHeader"
 
-const AboutPage = () => {
+const AboutPage = ({logedIn}) => {
     return (
         <>
+        <DesktopHeader logedIn={logedIn} />
         <AboutUs />
         <OurMission />
         <MeetOurTeam />
@@ -39,4 +40,4 @@ const OurSponsors = () => {
     )
 }
 
-export default AboutPage
+export default AboutPage;

@@ -1,23 +1,22 @@
-import LogInButton from "./buttons"
-import LogOutButton from "./buttons"
+import {LogInButton, LogOutButton} from "../buttons"
 import { ShoppingCartIcon } from '@heroicons/react/24/solid'
 import logo from "../../assets/originCream.png";
 import { Link } from "react-router-dom";
 
-const DesktopHeader = () => {
+const DesktopHeader = ({logedIn}) => {
     return (
-        <>
-        <DesktopHeaderLogIn />
+        logedIn?
+        <DesktopHeaderLogIn />:
         <DesktopHeaderLogOut />
-        </>
+    
     )
 }
 
 const DesktopHeaderLogIn = () => {
     return (
-        <div className="flex flex-row  ">
+        <div className="flex flex-row">
             <img src={logo} alt="Origin Logo" className="max-h-24" />
-            <div className="bg-greenish items-center text-lightcream/24">
+            <div className="flex flex-row bg-greenish items-center text-lightcream/24">
                     <Link to="/pages/about" className="focus:text-lightcream flex flex-col items-center">
                     Home
                     </Link>
@@ -61,4 +60,4 @@ const DesktopHeaderLogOut = () => {
     )
 }
 
-export default DesktopHeader;
+export default DesktopHeader
