@@ -5,14 +5,14 @@ import FooterDesktop from "../components/footer/footerDesktop";
 
 export default function RootLayout() {
     return (
-        <div className="root-layout">
-            <header>
+        <div className="root-layout flex flex-col h-screen">
+            <header className="h-10">
                 
             </header>
-            <main className="container mx-auto">
+            <main className="container mx-auto mb-auto">
                 <Outlet />
             </main>
-            <footer>
+            <footer className="h-15">
                 <FooterMobile />
                 <FooterDesktop />
             </footer>
