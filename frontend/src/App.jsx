@@ -1,26 +1,40 @@
-import { Route, Routes } from "react-router-dom";
-import AboutPage from "./pages/about";
-import EventsPage from "./pages/events";
+import { 
+    createBrowserRouter,
+    Route,
+    createRoutesFromElements,
+    RouterProvider
+ } from "react-router-dom"
+import RootLayout from "./layouts/rootLayout";
+
 import HomePage from "./pages/home";
+import AboutPage from "./pages/about";
+import ContactPage from "./pages/contact";
 import ProfilePage from "./pages/profile";
 import TreePage from "./pages/tree";
-import ContactPage from "./pages/contact";
+import EventsPage from "./pages/events";
 import ShopPage from "./pages/shop";
 import LegalPolicyPage from "./pages/legalPolicy";
 
+
+const router = createBrowserRouter(
+    createRoutesFromElements(
+    <Route path="/" element={<RootLayout />}>
+        <Route index element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/tree" element={<TreePage />} />
+        <Route path="/events" element={<EventsPage />} />
+        <Route path="/shop" element={<ShopPage />} />
+        <Route path="/legalPolicy" element={<LegalPolicyPage />} />
+    </Route>
+    )
+)
+
 function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/profile" element={<ProfilePage />} />
-      <Route path="/tree" element={<TreePage />} />
-      <Route path="/events" element={<EventsPage />} />
-      <Route path="/about" element={<AboutPage />} />
-      <Route path="/contact" element={<ContactPage />} />
-      <Route path="/shop" element={<ShopPage />} />
-      <Route path="/legal" element={<LegalPolicyPage />} />
-    </Routes>
-  );
+    return (
+        <RouterProvider router={router} />
+    )
 }
 
 export default App;
