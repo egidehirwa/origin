@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 const FooterMobile = () => {
     return (
         <div className=" bg-greenish shadow-[0_-15px_15px_-2px_hsla(157,12%,35%,0.5)] rounded-t-[15px] lg:hidden">
-            <nav className="[ text-lightcream/30 ] [ m-auto p-4 ] [ flex justify-center ] [ space-x-5 ">
+            <nav className="text-lightcream/30 m-auto p-4 flex justify-center space-x-5 ">
                 <Link to="/about" className="focus:text-lightcream flex flex-col items-center">
                     <RectangleGroupIcon className="h-6 w-6" />
                     About
                 </Link>
-                <Link to="/events" className="focus:text-lightcream [ flex flex-col items-center ]">
+                <Link to="/events" className="focus:text-lightcream flex flex-col items-center">
                     <CalendarDaysIcon className="h-6 w-6" />
                     Event   
                 </Link>

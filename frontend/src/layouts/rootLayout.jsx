@@ -1,5 +1,7 @@
-import FooterMobile from "../components/footer/footerMobile";
 import { Outlet } from "react-router-dom";
+
+import FooterMobile from "../components/footer/footerMobile";
+import FooterDesktop from "../components/footer/footerDesktop";
 
 export default function RootLayout() {
     return (
@@ -12,7 +14,7 @@ export default function RootLayout() {
             </main>
             <footer>
                 <FooterMobile />
-                {/* <footerDesktop /> */}
+                <FooterDesktop />
             </footer>
         </div>
     )
