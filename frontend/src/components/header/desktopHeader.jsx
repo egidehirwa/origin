@@ -1,6 +1,8 @@
 import LogInButton from "./buttons"
 import LogOutButton from "./buttons"
 import { ShoppingCartIcon } from '@heroicons/react/24/solid'
+import logo from "../../assets/originCream.png";
+import { Link } from "react-router-dom";
 
 const DesktopHeader = () => {
     return (
@@ -14,11 +16,17 @@ const DesktopHeader = () => {
 const DesktopHeaderLogIn = () => {
     return (
         <div className="flex flex-row  ">
-            <img className="iteams-left" src="./origin_logo_cream.png" alt="origin_logo" />
+            <img src={logo} alt="Origin Logo" className="max-h-24" />
             <div className="bg-greenish items-center text-lightcream/24">
-                <a className="text-lightcream/24" href="#">Home</a>
-                <a className="text-lightcream/24" href="#">About Us</a>
-                <a className="text-lightcream/24" href="#">Contact Us</a>
+                    <Link to="/pages/about" className="focus:text-lightcream flex flex-col items-center">
+                    Home
+                    </Link>
+                    <Link to="/pages/about" className="focus:text-lightcream flex flex-col items-center">
+                    About us
+                    </Link>
+                    <Link to="/pages/contact" className="focus:text-lightcream flex flex-col items-center">
+                    Contact us
+                    </Link>
             </div>
             <LogInButton />
             <div className="flex iteams-left">
@@ -32,11 +40,17 @@ const DesktopHeaderLogIn = () => {
 const DesktopHeaderLogOut = () => {
     return (
         <div className="flex flex-row  ">
-            <img className="iteams-left" src="./origin_logo_cream.png" alt="origin_logo" />
+            <img src={logo} alt="Origin Logo" className="max-h-24" />
             <div className="bg-greenish items-center text-lightcream/24">
-                <a className="text-lightcream/24" href="#">About Us</a>
-                <a className="text-lightcream/24" href="#">Tree</a>
-                <a className="text-lightcream/24" href="#">Profile</a>
+                    <Link to="/pages/about" className="focus:text-lightcream flex flex-col items-center">
+                    About Us
+                    </Link>
+                    <Link to="/pages/tree" className="focus:text-lightcream flex flex-col items-center">
+                    Tree
+                    </Link>
+                    <Link to="/pages/profile" className="focus:text-lightcream flex flex-col items-center">
+                    Profile
+                    </Link>
             </div>
             <LogOutButton />
             <div className="flex iteams-left">
