@@ -10,7 +10,7 @@ const FooterDesktop = () => {
         <div className="bg-greenish text-lightcream min-h-[100px] p-8 hidden lg:flex justify-between items-center">
             <img src={logo} alt="Origin Logo" className="max-h-24" />
             <div className="flex flex-col items-center">
-                <div className="border-b-2 border-lightcream flex space-x-4">
+                <div className="border-b-2 pb-3 border-lightcream flex space-x-4">
                     <Link to="/legalPolicy" className="focus:text-lightcream flex flex-col items-center">
                     PRIVACY POLICY
                     </Link>
@@ -24,7 +24,7 @@ const FooterDesktop = () => {
                     CONTACT
                     </Link>
                 </div>
-                <p>©2023 - Origin. All rights reserved.</p>
+                <p className="pt-3">©2023 - Origin. All rights reserved.</p>
             </div>
             <div className="flex space-x-4">
                 <a href="https://fr-fr.facebook.com/"><img src={fcbLogo} alt="Logo Facebook" className="h-12" /></a>
