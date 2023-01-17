@@ -1,4 +1,4 @@
-import DesktopHeader from "./desktopHeader"
+// import DesktopHeader from "./desktopHeader"
 
 const AboutPage = () => {
     return (
