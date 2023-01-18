@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const FooterDesktop = () => {
     return (
 
-        <div className="bg-greenish">
+        <div className="bg-darkgreen">
         <div className="container mx-auto text-lightcream min-h-[100px] p-8 hidden lg:flex justify-between items-center">
             <img src={logo} alt="Origin Logo" className="max-h-24" />
             <div className="flex flex-col items-center">
