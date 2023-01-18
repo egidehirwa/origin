@@ -5,7 +5,7 @@ import FooterDesktop from "../components/footer/footerDesktop";
 
 export default function RootLayout() {
     return (
-        <div className="root-layout flex flex-col h-screen bg-greenish">
+        <div className="root-layout flex flex-col h-full bg-greenish">
             <header className="h-10"></header>
             <main className="container mx-auto mb-auto">
                 <Outlet />
