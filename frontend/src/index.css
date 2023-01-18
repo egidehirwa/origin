@@ -3,36 +3,33 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Righteous";
-    src: url(/src/fonts/Righteous-Regular.ttf);
-    font-family: "Urbanist";
-    src: url(/src/fonts/MontserratAlternates-Medium.ttf);
+  font-family: "Righteous";
+  src: url(/src/fonts/Righteous-Regular.ttf);
+  font-family: "Urbanist";
+  src: url(/src/fonts/MontserratAlternates-Medium.ttf);
 }
 
 body {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.mainHeaderP {
-    @apply p-2 font-primaryFont text-sm text-lightcream;
-}
 .mainHeader {
-    @apply p-2 font-primaryFont text-xl text-lightcream;
+  @apply p-2 font-primaryFont text-xl text-lightcream;
 }
 
 .header1 {
-    @apply p-2 font-secondaryFont text-lightcream;
+  @apply p-2 font-secondaryFont text-lightcream;
 }
 
 .textAreaWhite {
-    @apply font-secondaryFont text-white;
+  @apply font-secondaryFont text-white;
 }
 
 .textAreaCream {
-    @apply pl-10 font-secondaryFont text-creemish;
+  @apply pl-10 font-secondaryFont text-creemish;
 }
 
 #root {
-    min-width: 100%;
+  min-width: 100%;
 }
