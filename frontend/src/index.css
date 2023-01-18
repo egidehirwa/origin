@@ -14,7 +14,9 @@ body {
     justify-content: center;
 }
 
-
+.mainHeaderP {
+    @apply p-2 font-primaryFont text-sm text-lightcream;
+}
 .mainHeader {
     @apply p-2 font-primaryFont text-xl text-lightcream;
 }
