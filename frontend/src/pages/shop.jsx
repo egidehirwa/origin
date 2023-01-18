@@ -3,13 +3,13 @@ import React from "react";
 const ShopPage = () => {
     return (
         <div>
-            <section class="px-20 py-20 relative bg-[#7b8a7f] " id="style">
-                <p class=" text-center font-primaryFont text-xl  text-darkgreen">
+            <section class="px-20 py-20  relative bg-gradient-to-r from-[#7b8b7f] to-transparent" id="style">
+                <p class=" text-center font-primaryFont text-xl  text-lightcream">
                     Get ready for some unbeatable deals with our exclusive partners - don't miss out!
                 </p>
             </section>
             <section class="px-10 py-10 relative bg-greenish" id="style"></section>
-            <section class="p-8 relative bg-[#dbe0de]" id="tree_home">
+            <section class=" p-8 relative bg-gradient-to-r from-[#dbe0de] to-[#7b8b7f]">
                 <div class="grid grid-cols-1 items-center gap-10 md:grid-cols-2 lg:grid-cols-12 p-8">
                     <div class="lg:col-span-7">
                         <div class="ltr:lg:ml-7 rtl:lg:mr-7">
@@ -40,8 +40,8 @@ const ShopPage = () => {
                 </div>
             </section>
             <section class="px-10 py-10 relative bg-greenish" id="style"></section>
-
-            <section class="p-8 relative bg-[#dbe0de]" id="family_fun">
+           
+            <section class=" p-8 relative bg-gradient-to-r from-[#7b8b7f] to-[#dbe0de]">
                 <div class="grid grid-cols-1 items-center gap-10 md:grid-cols-2 lg:grid-cols-12 p-8">
                     <div class="lg:col-span-5">
                         <div class="relative">
@@ -72,8 +72,7 @@ const ShopPage = () => {
                 </div>
             </section>
             <section class="px-10 py-10 relative bg-greenish" id="style"></section>
-
-            <section class=" p-8 relative bg-[#dbe0de]" id="dna_ancestry">
+            <section class=" p-8 relative bg-gradient-to-r from-[#dbe0de] to-[#7b8b7f]">
                 <div class="grid grid-cols-1 items-center gap-10 md:grid-cols-2 lg:grid-cols-12 p-8">
                     <div class="lg:col-span-7">
                         <div class="ltr:lg:ml-7 rtl:lg:mr-7">
@@ -102,6 +101,7 @@ const ShopPage = () => {
                     </div>
                 </div>
             </section>
+            <section class="px-10 py-10 relative bg-greenish" id="style"></section>
         </div>
     );
 };
