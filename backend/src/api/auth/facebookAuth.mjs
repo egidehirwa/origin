@@ -10,7 +10,7 @@ const facebookRouter = express.Router()
 passport.use(new FacebookStrategy({
     clientID : process.env.FACEBOOK_APP_ID,
     clientSecret : process.env.FACEBOOK_APP_SECRET, 
-    callbackURL : 'http://localhost:3000/auth/facebook/callback'
+    callbackURL : 'http://localhost:3000/auth/f/facebook/callback'
 },
 async function(accessToken, refreshToken, profile, done) {
 
@@ -30,9 +30,6 @@ async function(accessToken, refreshToken, profile, done) {
     }
 }
 ))
-
-
-
 
 facebookRouter.get('/facebook', passport.authenticate('facebook'))
 
