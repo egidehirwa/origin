@@ -1,6 +1,6 @@
 const ProfilePage = () => {
   return (
-    <div className="bg-greenish h-auto w-full px-4 space-y-12">
+    <div className=" container bg-greenish h-full px-4 space-y-12 py-12">
       {/* Profile Intro Wrapper */}
       {/* Header Wrapper */}
       <div className="space-y-12 bg-lightcream p-4 rounded-lg">
@@ -52,7 +52,7 @@ const ProfilePage = () => {
       </div>
 
       {/* Informations Section */}
-      <div className="space-y-4 pb-12">
+      <div className="space-y-4">
         <h2 className="text-xl text-lightcream">Informations</h2>
 
         {/* informations wrapper */}
