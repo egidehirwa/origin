@@ -1,4 +1,4 @@
-import { LogInButton, LogOutButton } from "../Buttons";
+import { LogInButton, LogOutButton } from "../buttons";
 import { ShoppingCartIcon } from "@heroicons/react/24/solid";
 import logo from "../../assets/originCream.png";
 import { Link } from "react-router-dom";
