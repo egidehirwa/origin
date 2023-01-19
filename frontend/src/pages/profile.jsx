@@ -27,7 +27,7 @@ const ProfilePage = () => {
           </div>
         </div>
         {/* Description Wrapper */}
-        <p className="p-3 border-2 rounded-md border-creemish text-gray-700">
+        <p className="p-3 border-2 rounded-md border-gradient gradient-red text-gray-700">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
           quae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           Voluptas, quae?

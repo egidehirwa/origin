@@ -22,6 +22,7 @@ module.exports = {
             sm: "0.8rem",
             base: "1rem",
             xl: "1.25rem",
+            xxl: "2rem"
         },
         fontFamily: {
             primaryFont: ["Righteous", "cursive"],
