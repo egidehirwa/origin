@@ -14,24 +14,26 @@ const DesktopHeader = ({logedIn}) => {
 
 const DesktopHeaderLogIn = () => {
     return (
-        <div className="flex flex-row">
+        <div className="bg-greenish mx-auto">
+        <div className="container mx-auto min-h-[30px] p-8 hidden lg:flex justify-between items-center">
             <img src={logo} alt="Origin Logo" className="max-h-24" />
-            <div className="flex flex-row bg-greenish items-center text-lightcream/24">
-                    <Link to="/pages/about" className="focus:text-lightcream flex flex-col items-center">
+            <div className="flex flex-row rounded-xl items-center bg-darkgreen space-x-4">
+                    <Link to="/pages/about" className="text-lightcream flex">
                     Home
                     </Link>
-                    <Link to="/pages/about" className="focus:text-lightcream flex flex-col items-center">
+                    <Link to="/pages/about" className="text-lightcream flex border-l-2 border-lightcream">
                     About us
                     </Link>
-                    <Link to="/pages/contact" className="focus:text-lightcream flex flex-col items-center">
+                    <Link to="/pages/contact" className="text-lightcream flex border-l-2 border-lightcream">
                     Contact us
                     </Link>
             </div>
             <LogInButton />
             <div className="flex iteams-left">
-                <ShoppingCartIcon className="h-6 w-6" />
+                <ShoppingCartIcon className="h-6 w-6 text-redcream" />
                 <p>Shop</p>
             </div>
+        </div>
         </div>
     )
 }
@@ -53,7 +55,7 @@ const DesktopHeaderLogOut = () => {
             </div>
             <LogOutButton />
             <div className="flex iteams-left">
-                <ShoppingCartIcon className="h-6 w-6" />
+                <ShoppingCartIcon className="h-6 w-6" text-redcream />
                 <p>Shop</p>
             </div>
         </div>
