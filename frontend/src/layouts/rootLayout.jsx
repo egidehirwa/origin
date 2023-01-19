@@ -3,6 +3,8 @@ import { Outlet } from "react-router-dom";
 import FooterMobile from "../components/footer/footerMobile";
 
 
+import FooterMobile from "../components/footer/footerMobile";
+import FooterDesktop from "../components/footer/footerDesktop";
 
 const RootLayout = () => {
   return (
