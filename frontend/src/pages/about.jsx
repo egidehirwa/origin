@@ -14,8 +14,8 @@ const AboutPage = ({logedIn}) => {
 
 const AboutUs = () => {
     return (
-        <div className="bg-greenish">
-        <h2>About Us</h2>
+        <div className="bg-greenish text-lightcream items-center">
+        <h2 className="text-3xl ">About Us</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet similique vero, unde earum placeat ab animi quo aut. Libero, ullam est hic consequuntur perferendis voluptates magnam error obcaecati quisquam minus?</p>
         </div>
     )
@@ -23,16 +23,18 @@ const AboutUs = () => {
 
 const OurMission = () => {
     return (
-        <div className="bg-darkgreen">
-        <h3>Our mission</h3>
+        <div className="bg-greenish text-lightcream items-center">
+        <h2>Our mission</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet similique vero, unde earum placeat ab animi quo aut. Libero, ullam est hic consequuntur perferendis voluptates magnam error obcaecati quisquam minus?</p>
+        <img src="./" alt="" />
         </div>
     )
 }
 
 const MeetOurTeam = () => {
     return (
-        <div className="bg-greenish">
+        <div className="bg-greenish text-lightcream items-center">
+            <h3>Meet Our Team</h3>
             <h3>Jerome</h3>
             <p>Front end developer</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel culpa nam praesentium alias sapiente quibusdam ad, architecto impedit ea possimus maiores aspernatur totam omnis explicabo nulla doloribus delectus dicta! Nemo.</p>
@@ -54,8 +56,9 @@ const MeetOurTeam = () => {
 
 const OurSponsors = () => {
     return (
-        <div className="bg-darkgreen">
-
+        <div className="bg-greenish text-lightcream items-center">
+            <h3>Our Sponsors</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio accusamus eius enim eaque nam cumque, architecto esse deserunt, minus excepturi aperiam commodi error nisi? Assumenda nihil facilis </p>
         </div>
     )
 }
