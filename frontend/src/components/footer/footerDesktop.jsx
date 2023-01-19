@@ -6,22 +6,22 @@ import { Link } from "react-router-dom";
 
 const FooterDesktop = () => {
     return (
-        
-        <div className="bg-greenish">
+
+        <div className="bg-darkgreen">
         <div className="container mx-auto text-lightcream min-h-[100px] p-8 hidden lg:flex justify-between items-center">
             <img src={logo} alt="Origin Logo" className="max-h-24" />
             <div className="flex flex-col items-center">
                 <div className="border-b-2 pb-3 border-lightcream flex space-x-4">
-                    <Link to="/legalPolicy" className="focus:text-lightcream flex flex-col items-center">
+                    <Link to="/legalPolicy" className="flex flex-col items-center">
                     PRIVACY POLICY
                     </Link>
-                    <Link to="/legalPolicy" className="focus:text-lightcream flex flex-col items-center">
+                    <Link to="/legalPolicy" className="flex flex-col items-center">
                     TERMS & CONDITIONS
                     </Link>
-                    <Link to="/legalPolicy" className="focus:text-lightcream flex flex-col items-center">
+                    <Link to="/legalPolicy" className="flex flex-col items-center">
                     COOKIE POLICY
                     </Link>
-                    <Link to="/legalPolicy" className="focus:text-lightcream flex flex-col items-center">
+                    <Link to="/contact" className="flex flex-col items-center">
                     CONTACT
                     </Link>
                 </div>

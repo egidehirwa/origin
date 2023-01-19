@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const FooterMobile = () => {
     return (
-        <div className=" bg-greenish shadow-[0_-15px_15px_-2px_hsla(157,12%,35%,0.5)] rounded-t-[15px] lg:hidden">
+        <div className=" bg-darkgreen shadow-[0_-15px_15px_-2px_hsla(157,12%,35%,0.5)] rounded-t-[15px] lg:hidden">
             <nav className="text-lightcream/30 p-1 flex justify-center space-x-3 ">
                 <Link to="/about" className="focus:text-lightcream flex flex-col items-center">
                     <RectangleGroupIcon className="h-5 w-5" />
