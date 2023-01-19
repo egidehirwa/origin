@@ -1,19 +1,21 @@
+
 import { Outlet } from "react-router-dom";
+import FooterMobile from "../components/footer/footerMobile";
 
-import FooterMobile from "../components/Footer/footerMobile";
-import FooterDesktop from "../components/Footer/footerDesktop";
 
-export default function RootLayout() {
+
+const RootLayout = () => {
   return (
     <div className="root-layout flex flex-col h-screen bg-greenish">
       <header className="h-10"></header>
       <main className="container mx-auto mb-auto">
-        <Outlet />
+        < Outlet />
       </main>
       <footer className="h-15">
-        <FooterMobile />
-        <FooterDesktop />
+        < FooterMobile />
       </footer>
     </div>
   );
 }
+
+export default RootLayout;
