@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 
-import FooterMobile from "../components/Footer/footerMobile";
-import FooterDesktop from "../components/Footer/footerDesktop";
+import FooterMobile from "../components/footer/footerMobile";
+import FooterDesktop from "../components/footer/footerDesktop";
 
 export default function RootLayout() {
   return (
