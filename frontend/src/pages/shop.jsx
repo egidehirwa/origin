@@ -40,7 +40,7 @@ const ShopPage = () => {
                 </div>
             </section>
             <section class="px-10 py-10 relative bg-greenish" id="style"></section>
-           
+
             <section class=" p-8 relative bg-gradient-to-r from-[#7b8b7f] to-[#dbe0de]">
                 <div class="grid grid-cols-1 items-center gap-10 md:grid-cols-2 lg:grid-cols-12 p-8">
                     <div class="lg:col-span-5">
