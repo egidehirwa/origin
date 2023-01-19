@@ -1,7 +1,8 @@
-import { LogInButton, LogOutButton } from "../Buttons";
+
 import { ShoppingCartIcon } from "@heroicons/react/24/solid";
 import logo from "../../assets/originCream.png";
 import { Link } from "react-router-dom";
+import { LogInButton, LogOutButton } from "../buttons/buttons";
 
 const DesktopHeader = ({ logedIn }) => {
   return logedIn ? <DesktopHeaderLogIn /> : <DesktopHeaderLogOut />;
@@ -9,7 +10,7 @@ const DesktopHeader = ({ logedIn }) => {
 
 const DesktopHeaderLogIn = () => {
   return (
-    <div className="flex flex-row">
+    <div className="hidden lg:flex flex-row">
       <img src={logo} alt="Origin Logo" className="max-h-24" />
       <div className="flex flex-row bg-greenish items-center text-lightcream/24">
         <Link
@@ -42,7 +43,7 @@ const DesktopHeaderLogIn = () => {
 
 const DesktopHeaderLogOut = () => {
   return (
-    <div className="flex flex-row  ">
+    <div className="hidden lg:flex flex-row  ">
       <img src={logo} alt="Origin Logo" className="max-h-24" />
       <div className="bg-greenish items-center text-lightcream/24">
         <Link

@@ -1,9 +1,7 @@
-import DesktopHeader from "../components/header/desktopHeader"
 
 const AboutPage = ({logedIn}) => {
     return (
         <>
-        <DesktopHeader logedIn={logedIn} />
         <AboutUs />
         <OurMission />
         <MeetOurTeam />
