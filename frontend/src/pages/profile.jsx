@@ -1,100 +1,45 @@
+import ProfileEventCard from "../components/userProfile/profileEventCard";
+import ProfileIntroCard from "../components/userProfile/profileIntroCard";
+import ProfileInfoCard from "../components/userProfile/profileInfoCard";
+import ProfileAlbumSection from "../components/userProfile/profileAlbumSection";
+
 const ProfilePage = () => {
   return (
-    <div className=" container bg-greenish h-full px-4 space-y-12 py-12">
-      {/* Profile Intro Wrapper */}
-      {/* Header Wrapper */}
-      <div className="space-y-12 bg-lightcream p-4 rounded-lg">
-        <img src="src/assets/Charlotte-chocolat-profile.png" alt="profile" />
-        <div>
-          <h1 className="text-black-900 text-xl font-bold">
-            Charlotte Chocolat
-          </h1>
-          <p className="text-black-200">Bruxelles</p>
+    <div
+      className=" container bg-greenish h-full px-4 space-y-12 py-12"
+      style={{
+        backgroundImage:
+          "url(https://i.ibb.co/qBtkHZK/kisspng-tree-of-life-clip-art-tree-vector-png-5aada1b892db02-1-1.png)",
+      }}
+    >
+      {/* Intro + Info Container */}
+      <div className="space-y-12 md:flex md:flex-row md:items-end gap-8">
+        {/* Profile Intro Card */}
+        <div className="md:w-1/2">
+          <ProfileIntroCard />
         </div>
-        {/* Details Wrapper */}
-        <div className="flex flex-row gap-6 justify-between px-6">
-          <div className="border-r-[1px] border-gray-400 px-4 justify-center w-1/3 align-center">
-            <p className="text-black-600">Age</p>
-            <p className="text-black-200 text-[3rem]">27</p>
-          </div>
-          <div className="border-r-[1px] border-gray-400 px-4 justify-center w-1/3 align-center">
-            <p className="text-black-600">Relations</p>
-            <p className="text-black-200 text-[3rem]">10</p>
-          </div>
-          <div>
-            <p className="text-black-600">Pictures</p>
-            <p className="text-black-200 text-[3rem]">8</p>
-          </div>
-        </div>
-        {/* Description Wrapper */}
-        <p className="p-3 border-2 rounded-md border-creemish text-gray-700">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-          quae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Voluptas, quae?
-        </p>
-      </div>
 
-      {/* Photos section */}
-      <div>
-        <div className="flex flex-col space-y-6">
-          <div className="flex flex-row justify-between">
-            <p className="text-lightcream text-xl">Last Photos</p>
-            <p className="text-lightcream">See my album</p>
-          </div>
-
-          {/* images wrapper */}
-          <div className="flex flex-row gap-4">
-            <div className="h-40 bg-lightcream rounded-lg w-1/3"></div>
-            <div className="h-40 bg-lightcream rounded-lg w-1/3"></div>
-            <div className="h-40 bg-lightcream rounded-lg w-1/3"></div>
-          </div>
+        {/* Informations Section */}
+        <div className="md:w-1/2">
+          <ProfileInfoCard />
         </div>
       </div>
 
-      {/* Informations Section */}
-      <div className="space-y-4">
-        <h2 className="text-xl text-lightcream">Informations</h2>
+      {/* Album + Event Container */}
+      <div className="space-y-12 md:flex md:flex-row md:items-start gap-8">
+        {/* Photo Album section */}
+        <div className="md:w-1/2 md:mt-12">
+          <ProfileAlbumSection />
+        </div>
 
-        {/* informations wrapper */}
-        <div className="space-y-8">
-          {/* item wrapper 1 */}
-          <div className="flex flex-row">
-            {/* icon wrapper */}
-            <div className="w-1/6">
-              <i className="fa-brands fa-pagelines h-10 w-5 text-white"></i>
-            </div>
-            {/* details wrapper */}
-            <div className="w-5/6 text-lightcream">
-              <p>Professional Experience</p>
-              <p>Info to be added later</p>
-            </div>
-          </div>
+        {/* Upcoming events wrapper*/}
+        <div className="bg-creemish p-8 rounded-lg space-y-4 md:w-1/2">
+          <h3 className="font-bold">Upcoming Birthdays</h3>
 
-          {/* item wrapper 2 */}
-          <div className="flex flex-row">
-            {/* icon wrapper */}
-            <div className="w-1/6">
-              <i className="fa-brands fa-pagelines h-10 w-5 text-white"></i>
-            </div>
-            {/* details wrapper */}
-            <div className="w-5/6 text-lightcream">
-              <p>Education</p>
-              <p>Info to be added later</p>
-            </div>
-          </div>
-
-          {/* item wrapper 3 */}
-          <div className="flex flex-row">
-            {/* icon wrapper */}
-            <div className="w-1/6">
-              <i className="fa-brands fa-pagelines h-10 w-5 text-white"></i>
-            </div>
-            {/* details wrapper */}
-            <div className="w-5/6 text-lightcream">
-              <p>Hobbies</p>
-              <p>Info to be added later</p>
-            </div>
-          </div>
+          {/* Event card component */}
+          <ProfileEventCard />
+          <ProfileEventCard />
+          <ProfileEventCard />
         </div>
       </div>
     </div>
