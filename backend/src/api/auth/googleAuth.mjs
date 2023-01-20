@@ -1,4 +1,4 @@
-/*import passport from 'passport';
+import passport from 'passport';
 import {
     Strategy as GoogleStrategy
 } from 'passport-google-oauth2'
@@ -19,27 +19,9 @@ passport.use(new GoogleStrategy({
     passReqToCallback: true,
     passResToCallback: true
   },
-  function (accessToken, refreshToken, profile, done) {
-
-//     try {
-//         console.log(profile)
-//         let user_profile = await client.query(`SELECT * FROM profile WHERE google_id = '${profile.id}'`)
-//         console.log(profile.id)
-//         console.log(user_profile)
-//         if (user_profile.rows.length > 0) {
-//             return done(null, {
-//                 redirect: `/profile/${user_profile.rows[0].id}`
-//             })
-//         } else {
-//             return done(null, {
-//                 redirect: '/create-profile'
-//             })
-//         }
-//     } catch (error) {
-//         console.log(error);
-//         return done(error);
-//     }
-}
+  function(request, accessToken, refreshToken, profile, done) {
+    return done(null, {redirect: `/profile/${user_profile.rows[0].id}`})
+  }
 ));
 
 passport.serializeUser(function(user, done){
@@ -59,13 +41,16 @@ googleRouter.get('/auth/google',
    passport.authenticate('google',{ scope: ['email', 'profile']})
 )
 
-googleRouter.get('/google/callback',
-passport.authenticate('google',{
-    successRedirect: '/auth/g/protected',
-    failureRedirect: '/auth/g/failure',
-})
-);
+// googleRouter.get('/google/callback',
+// passport.authenticate('google',{
+//     successRedirect: '/auth/g/protected',
+//     failureRedirect: '/auth/g/failure',
+// })
+// );
 
+googleRouter.get('/google/callback', (req, res) => {
+    res.send("helllooooooooooooo")
+});
 
 googleRouter.get('/failure', (req,res) => {
     res.send('We have a problem')
