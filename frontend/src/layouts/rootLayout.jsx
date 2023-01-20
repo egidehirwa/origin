@@ -3,10 +3,10 @@ import FooterMobile from "../components/footer/footerMobile";
 import FooterDesktop from "../components/footer/footerDesktop";
 import DesktopHeader from "../components/header/desktopHeader";
 
-const RootLayout = ({logedIn}) => {
+const RootLayout = ({ logedIn }) => {
   return (
     <div className="root-layout flex flex-col min-h-screen bg-greenish text-lightcream">
-      <header className="h-10">
+      <header className="mb-10">
         <DesktopHeader logedIn={logedIn} />
       </header>
       <main className="container mx-auto my-auto">
