@@ -29,7 +29,7 @@ function ProfileIntroCard() {
         </div>
       </div>
       {/* Description Wrapper */}
-      <p className="p-3 border-4 rounded-md border-creemish text-gray-700">
+      <p className="p-3 border-4 rounded-md text-gray-700">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
         quae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         Voluptas, quae?
