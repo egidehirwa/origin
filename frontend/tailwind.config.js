@@ -22,6 +22,7 @@ module.exports = {
             sm: "0.8rem",
             base: "1rem",
             xl: "1.25rem",
+            xxl: "2rem",
         },
         fontFamily: {
             primaryFont: ["Righteous", "cursive"],
@@ -53,18 +54,18 @@ module.exports = {
                 xl: "48px",
             },
             maxWidth: {
-                "1": "100%",
+                1: "100%",
                 "3/4": "75%",
                 "1/2": "50%",
-                "1/4": "25%"
+                "1/4": "25%",
             },
             maxHeight: {
-                "1": "100%",
+                1: "100%",
                 "3/4": "75%",
                 "1/2": "50%",
-                "1/4": "25%"
-            }
-        }
+                "1/4": "25%",
+            },
+        },
     },
     plugins: [],
 };

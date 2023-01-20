@@ -1,12 +1,14 @@
-
 import { Outlet } from "react-router-dom";
 import FooterMobile from "../components/footer/footerMobile";
 import FooterDesktop from "../components/footer/footerDesktop";
+import DesktopHeader from "../components/header/desktopHeader";
 
-const RootLayout = () => {
+const RootLayout = ({logedIn}) => {
   return (
     <div className="root-layout flex flex-col min-h-screen bg-greenish">
-      <header className="h-10"></header>
+      <header className="h-10">
+        <DesktopHeader logedIn={logedIn} />
+      </header>
       <main className="container mx-auto mb-auto">
         < Outlet />
       </main>
