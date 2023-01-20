@@ -34,7 +34,7 @@ const ProfilePage = () => {
 
         {/* Upcoming events wrapper*/}
         <div className="bg-creemish p-8 rounded-lg space-y-4 md:w-1/2">
-          <h3 className="font-bold">Upcoming Birthdays</h3>
+          <h3 className="text-black font-bold text-lg">Upcoming Birthdays</h3>
 
           {/* Event card component */}
           <ProfileEventCard />
