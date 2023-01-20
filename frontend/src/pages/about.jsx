@@ -13,7 +13,7 @@ const AboutPage = ({logedIn}) => {
 const AboutUs = () => {
     return (
         <div className="bg-lightgreen flex flex-col items-center text-center text-lightcream pt-28 pb-28">
-        <h2 className="text-center text-3xl">About Us</h2>
+        <h2 className="text-center text-xl">About Us</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet similique vero, unde earum placeat ab animi quo aut. Libero, ullam est hic consequuntur perferendis voluptates magnam error obcaecati quisquam minus?</p>
         </div>
     )

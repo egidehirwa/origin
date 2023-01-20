@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 const DesktopHeader = ({logedIn}) => {
     return (
         logedIn?
-        <DesktopHeaderLogIn />:
-        <DesktopHeaderLogOut />
+        <DesktopHeaderLogOut/>:
+        <DesktopHeaderLogIn />
     
     )
 }
@@ -15,53 +15,55 @@ const DesktopHeader = ({logedIn}) => {
 const DesktopHeaderLogIn = () => {
     return (
         <div className="bg-lightgreen">
-        <div className="container max-h-6 p-8 hidden lg:flex justify-between  items-center">
-            <img src={logo} alt="Origin Logo" className="max-h-24" />
-            <div className="flex items-center w-1/2 rounded-xl justify-around bg-darkgreen space-y-4">
+            <div className="min-h-4 hidden lg:flex justify-around  items-center">
+                <img src={logo} alt="Origin Logo" className="max-h-24" />
+                <div className=" bg-darkgreen w-1/3 min-h-[50px] rounded-xl flex justify-evenly items-center">
                     <Link to="/about" className="text-center font-semibold text-lightcream w-1/3">
-                    Home
+                        Home
                     </Link>
-                    <Link to="/about" className="text-center font-semibold text-lightcream w-1/3 border-l-2 pl-10 border-lightcream">
-                    About us
+                    <Link to="/about" className="text-center font-semibold text-lightcream w-1/3 border-lightcream">
+                        About us
                     </Link>
-                    <Link to="/contact" className="text-center font-semibold text-lightcream w-1/3 border-l-2 pl-10 border-lightcream">
-                    Contact us
+                    <Link to="/contact" className="text-center font-semibold text-lightcream w-1/3 border-lightcream">
+                        Contact us
                     </Link>
+                </div>
+                <div className="flex items-left space-x-2">
+                    <LogInButton />
+                    <div className="flex">
+                        <ShoppingCartIcon className="h-6 w-6 text-redcream" />
+                        <p>Shop</p>
+                    </div>
+                </div>
             </div>
-            <LogInButton />
-            <div className="flex iteams-left">
-                <ShoppingCartIcon className="h-6 w-6 text-redcream" />
-                <p>Shop</p>
-            </div>
-        </div>
-        </div>
+        </div >
     )
 }
 
 const DesktopHeaderLogOut = () => {
     return (
-            <div className="bg-lightgreen">
-            <div className="container max-h-6 p-8 hidden lg:flex justify-between items-center">
+        <div className="bg-lightgreen">
+            <div className="container max-h-6 p-8 hidden lg:flex justify-between  items-center">
                 <img src={logo} alt="Origin Logo" className="max-h-24" />
                 <div className="flex items-center w-1/2 rounded-xl justify-around bg-darkgreen space-y-4">
-                        <Link to="/about" className="text-center font-semibold text-lightcream w-1/3">
+                    <Link to="/about" className="text-center font-semibold text-lightcream w-1/3">
                         Home
-                        </Link>
-                        <Link to="/about" className="text-center font-semibold text-lightcream w-1/3 border-l-2 pl-10 border-lightcream">
+                    </Link>
+                    <Link to="/about" className="text-center font-semibold text-lightcream w-1/3 border-l-2 pl-10 border-lightcream">
                         About us
-                        </Link>
-                        <Link to="/contact" className="text-center font-semibold text-lightcream w-1/3 border-l-2 pl-10 border-lightcream">
+                    </Link>
+                    <Link to="/contact" className="text-center font-semibold text-lightcream w-1/3 border-l-2 pl-10 border-lightcream">
                         Contact us
-                        </Link>
+                    </Link>
                 </div>
-                <LogInButton />
+                <LogOutButton />
                 <div className="flex iteams-left">
                     <ShoppingCartIcon className="h-6 w-6 text-redcream" />
                     <p>Shop</p>
                 </div>
             </div>
-            </div>
-        )
-    }
+        </div>
+    )
+}
 
 export default DesktopHeader
