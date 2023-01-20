@@ -20,7 +20,7 @@ CREATE TABLE "profile"(
     "profilePicture" VARCHAR(255),
     "private" BOOLEAN,
     "facebook_id" BIGINT,
-    "google_id" BIGINT,
+    "google_id" VARCHAR(255),
     "apple_id" BIGINT 
 );
 ALTER TABLE
