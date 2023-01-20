@@ -1,9 +1,9 @@
-import { 
+import {
     createBrowserRouter,
     Route,
     createRoutesFromElements,
     RouterProvider
- } from "react-router-dom"
+} from "react-router-dom"
 import RootLayout from "./layouts/rootLayout";
 
 import HomePage from "./pages/home";
@@ -18,16 +18,16 @@ import LegalPolicyPage from "./pages/legalPolicy";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
-        <Route index element={<HomePage />} />
-        <Route path="/about" element={<AboutPage logedIn = {true} />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/profile" element={<ProfilePage />} />
-        <Route path="/tree" element={<TreePage />} />
-        <Route path="/events" element={<EventsPage />} />
-        <Route path="/shop" element={<ShopPage />} />
-        <Route path="/legalPolicy" element={<LegalPolicyPage />} />
-    </Route>
+        <Route path="/" element={<RootLayout />}>
+            <Route index element={<HomePage />} />
+            <Route path="/about" element={<AboutPage logedIn={true} />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/tree" element={<TreePage />} />
+            <Route path="/events" element={<EventsPage />} />
+            <Route path="/shop" element={<ShopPage />} />
+            <Route path="/legalPolicy" element={<LegalPolicyPage />} />
+        </Route>
     )
 )
 

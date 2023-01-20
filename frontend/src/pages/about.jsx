@@ -21,7 +21,7 @@ const AboutUs = () => {
 
 const OurMission = () => {
     return (
-        <div className="text-lightcream flex flex-col items-center text-center text-lightcream pt-28 pb-28">
+        <div className="text-lightcream flex flex-col items-center text-center pt-28 pb-28">
             <h2>Our mission</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet similique vero, unde earum placeat ab animi quo aut. Libero, ullam est hic consequuntur perferendis voluptates magnam error obcaecati quisquam minus?</p>
             <img src="./" alt="" />
