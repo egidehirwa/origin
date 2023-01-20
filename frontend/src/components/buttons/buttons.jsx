@@ -13,14 +13,14 @@ const Buttons = () => {
 const LogInButton = () => {
     return (
         <div>
-        <Link to="/profile" className="focus:text-lightcream flex flex-col items-center"></Link>
+            <button Link to="/profile" className="text-lightcream bg-gradient-red">LogIn </button>
         </div>
     )
 }
 const LogOutButton = () => {
     return (
         <div>
-        <Link to="/" className="focus:text-lightcream flex flex-col items-center"></Link>
+        <Link to="/" className="bg-gradient-red">LogOut</Link>
         </div>
     )
 }
