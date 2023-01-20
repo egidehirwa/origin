@@ -34,18 +34,22 @@ body {
   min-width: 100%;
 }
 
-.border-gradient{
+.border-gradient {
   border: 5px solid;
   border-image-slice: 1;
   border-width: 3px;
 }
 
-.gradient-red{
-  border-image-source: linear-gradient(163deg, rgba(164,100,108,1) 0%, rgba(218,194,162,1) 100%);
+.gradient-red {
+  border-image-source: linear-gradient(163deg, rgba(164, 100, 108, 1) 0%, rgba(218, 194, 162, 1) 100%);
   border-radius: 50px;
 }
 
-.gradient-green{
+.gradient-green {
   border-image-source: linear-gradient(163deg, rgba(230, 218, 199, 1) 0%, rgba(79, 100, 92, 1) 100%);
   border-radius: 50px;
+}
+
+.showConnexion {
+  top: 0;
 }
