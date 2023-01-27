@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 const LegalPolicyPage = () => {
+    const navigate = useNavigate();
+
     return (
         <div>
             <section class="px-10 py-10 relative bg-gradient-to-r from-[#7b8b7f] to-[#7b8b7f]" id="style">
@@ -93,13 +97,12 @@ const LegalPolicyPage = () => {
                     </p>
                 </div>
                 <div class="flex items-center justify-center mt-10">
-                    <a href="https://www.google.be/" class="btn rounded-md px-4 py-4  bg-darkgreen text-lightcream hover:bg-creemish">
-                        Turn Home Page
-                    </a>
+                    <button className="btn rounded-md px-4 py-4  bg-darkgreen text-lightcream hover:bg-creemish " onClick={() => navigate("/")}>
+                        Turn Home Page{" "}
+                    </button>
                 </div>
             </div>
         </div>
     );
 };
-
 export default LegalPolicyPage;
