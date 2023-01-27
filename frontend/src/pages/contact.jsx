@@ -1,4 +1,3 @@
-
 const ContactPage = () => {
     return (
         <div>
@@ -61,6 +60,9 @@ const ContactPage = () => {
                                 </a>
                             </div>
                         </form>
+                    </div>
+                    <div class="lg:col-span-5 relative mt-16">
+                        <img src="images/contact.png" class="" alt="" />
                     </div>
                 </div>
             </section>
