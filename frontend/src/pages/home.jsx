@@ -17,7 +17,7 @@ import badgeApple from "../assets/socialLogos/badgeApple.svg"
 
 const HomeMobile = () => {
     return (
-        <div className="flex flex-col max-w-[90%] items-center item mx-auto gap-8 lg:hidden">
+        <div className="min-h-screen flex flex-col items-center justify-center mx-auto lg:hidden">
             <EmailConnexion />
             <div>
                 <img src={originCream} alt="Origin Logo" />
@@ -45,7 +45,7 @@ const HomeDesktop = () => {
                         <br />
                         <p className="max-w-1/2">Discover your ancestors and leave a message for those who come after you.</p>
                     </div>
-                    <img  src={exempleOfTree} alt="exemple of tree" />
+                    <img src={exempleOfTree} alt="exemple of tree" />
                 </div>
             </div>
 
