@@ -7,6 +7,7 @@ import GoogleButton from "../components/buttons/googleButton";
 import EmailConnexion from "../components/popup/popupConnexion";
 
 // img
+import treeBG from "../assets/background/treeBG.png"
 import exempleOfTree from "../assets/background/exempleOfTree.png"
 import originCream from "../assets/originLogos/originCream.png"
 import badgeGoogle from "../assets/socialLogos/badgeGoogle.png"
@@ -44,14 +45,18 @@ const HomeDesktop = () => {
                         <br />
                         <p className="max-w-1/2">Discover your ancestors and leave a message for those who come after you.</p>
                     </div>
-                    <img src={exempleOfTree} alt="exemple of tree" />
+                    <img  src={exempleOfTree} alt="exemple of tree" />
                 </div>
             </div>
-            <div className="flex flex-col items-center">
+
+            <div className="flex flex-col items-center relative">
                 <h2 className="max-w-1/2">And watch your </h2>
                 <br/>
                 <h2>tree grow over time</h2>
+                <img className="absolute w-[1000px] left-0 right-0 ml-auto mr-auto bottom-0" src={treeBG} alt="background img" />
+
             </div>
+
             <div className="bg-gradient-to-br from-lightgreen to-greenish">
                 <div className=" container mx-auto divide-x-2 py-12 divide-lightcream flex">
                     <div className="flex flex-col items-center">
