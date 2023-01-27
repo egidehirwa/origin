@@ -5,11 +5,11 @@ import DesktopHeader from "../components/header/desktopHeader";
 
 const RootLayout = ({ logedIn }) => {
   return (
-    <div className="root-layout flex flex-col min-h-screen bg-greenish text-lightcream">
+    <div className="root-layout min-h-screen grid grid-rows-[auto_1fr_auto] bg-greenish text-lightcream">
       <header className="lg:mb-10">
         <DesktopHeader logedIn={logedIn} />
       </header>
-      <main className="container mx-auto my-auto">
+      <main className="">
         < Outlet />
       </main>
       <footer >
