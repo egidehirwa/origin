@@ -1,4 +1,11 @@
+import { useState } from "react";
+
 const TreePage = () => {
+    const [checked, setChecked] = useState(false);
+    const checkMe = () => {
+        setChecked(!checked);
+    };
+
     return (
         <div>
             <section className="px-10 py-10 relative bg-gradient-to-r from-[#7b8b7f] to-[#7b8b7f]" id="style">
@@ -81,23 +88,21 @@ const TreePage = () => {
                                         required
                                     />
                                 </div>
-                                <label for="info" className="block mb-2 text-sm font-secondaryFont text-creemish ">
+                                <label for="info" className="block mb-2 text-sm font-secondaryFont text-creemish" data-headlessui-state="open">
                                     If your relative is alive, leave the box below blank.{" "}
                                 </label>
+
                                 <input
                                     id="link-checkbox"
                                     type="checkbox"
+                                    onChange={checkMe}
                                     value=""
-                                    className="w-4 h-4 text-greenish  border-gray-300 rounded focus:ring-creemish "
+                                    className="w-4 h-4 text-greenish  border-gray-300 rounded accent-white checked focus:ring-creemish "
                                 />
-                                <label for="info" className=" p-2 mb-2 text-sm font-secondaryFont text-creemish ">
+                                <label for="info" className=" p-2 mb-2 text-sm font-secondaryFont text-creemish " data-headlessui-state="open">
                                     Not alive.
                                 </label>
-
-                                <div>
-                                    <label for="info" className="block mb-2 text-sm font-secondaryFont text-creemish ">
-                                        According to the checkbox this will open = Year of Death
-                                    </label>
+                                <div style={{ display: checked ? "block" : "none" }}>
                                     <input
                                         type="info"
                                         id="info"
@@ -106,6 +111,7 @@ const TreePage = () => {
                                         required
                                     />
                                 </div>
+
                                 <div className="relative mt-10">
                                     <a href="https://www.google.be/" className="btn rounded-md px-4 py-4  bg-creemish text-black hover:bg-darkgreen">
                                         Edit
