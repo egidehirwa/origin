@@ -12,10 +12,8 @@ const Buttons = () => {
 
 const LogInButton = () => {
     return (
-            <button className="">
-           <Link to="/profile" className="text-lightcream bg-gradient-red">LogIn
-            <img src="" alt="" />
-            </Link>
+            <button className="text-darkgreen bg-[gradient-red] h-12 rounded-xl">
+           <Link to="/profile" className="">LogIn</Link>
             </button>
     )
 }

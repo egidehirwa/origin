@@ -1,71 +1,70 @@
-import {LogInButton, LogOutButton} from "../buttons/buttons"
-import { ShoppingCartIcon } from '@heroicons/react/24/solid'
+import { LogInButton, LogOutButton } from "../buttons/buttons";
 import logo from "../../assets/originCream.png";
 import { Link } from "react-router-dom";
+import shoppingcart from "../../assets/shoppingcart.png";
 
-const DesktopHeader = ({logedIn}) => {
-    return (
-        logedIn?
-        <DesktopHeaderLogOut/>:
-        <DesktopHeaderLogIn />
-    
-    )
-}
+const DesktopHeader = ({ logedIn }) => {
+  return logedIn ? <DesktopHeaderLogOut /> : <DesktopHeaderLogIn />;
+};
 
 const DesktopHeaderLogIn = () => {
-    return (
-        <div className="bg-lightgreen">
-            <div className="min-h-4 hidden lg:flex justify-around  items-center">
-                <img src={logo} alt="Origin Logo" className="max-h-24" />
-                <div className=" bg-greenish w-1/3 min-h-[50px] rounded-xl flex justify-evenly items-center">
-                    <Link to="/about" className="text-center font-semibold text-lightcream w-1/3">
-                        Home
-                    </Link>
-                    <Link to="/about" className="text-center font-semibold text-lightcream w-1/3 border-lightcream">
-                        About us
-                    </Link>
-                    <Link to="/contact" className="text-center font-semibold text-lightcream w-1/3 border-lightcream">
-                        Contact us
-                    </Link>
-                </div>
-                <div className="flex items-left space-x-2">
-                    <LogInButton />
-                    <div className="flex">
-                        <ShoppingCartIcon className="h-6 w-6 text-redcream" />
-                        <p>Shop</p>
-                    </div>
-                </div>
-            </div>
-        </div >
-    )
-}
+  return (
+    <div className="bg-lightgreen">
+      <div className="min-h-4 hidden lg:flex justify-around  items-center">
+        <img src={logo} alt="Origin Logo" className="max-h-24" />
+
+        <div className=" bg-greenish w-1/2 min-h-[50px] rounded-xl flex justify-evenly items-center">
+          <Link to="/about"
+            className="text-center font-semibold text-lightcream w-1/3">Home</Link>
+
+          <Link to="/about"
+            className="text-center font-semibold text-lightcream w-1/3">About us</Link>
+
+          <Link to="/contact"
+            className="text-center font-semibold text-lightcream w-1/3">Contact us</Link>
+        </div>
+
+        <div className="flex space-x-2">
+          <LogInButton />
+        </div>
+
+        <div className="flex h-16">
+           <Link to="/shop"><img src={shoppingcart} alt="" /></Link>
+        </div>
+        
+        </div>
+      </div>
+  );
+};
 
 const DesktopHeaderLogOut = () => {
-    return (
+  return (
         <div className="bg-lightgreen">
-            <div className="container max-h-6 p-8 hidden lg:flex justify-between  items-center">
-                <img src={logo} alt="Origin Logo" className="max-h-24" />
-                <div className="flex items-center w-1/2 rounded-xl justify-around bg-darkgreen space-y-4">
-                    <Link to="/about" className="text-center font-semibold text-lightcream w-1/3">
-                        Home
-                    </Link>
-                    <Link to="/about" className="text-center font-semibold text-lightcream w-1/3 border-l-2 pl-10 border-lightcream">
-                        About us
-                    </Link>
-                    <Link to="/contact" className="text-center font-semibold text-lightcream w-1/3 border-l-2 pl-10 border-lightcream">
-                        Contact us
-                    </Link>
-                </div>
-                <LogOutButton />
-                <div className="flex iteams-left">
-                <ShoppingCartIcon className="h-6 w-6 text-redcream" />
-                    <Link to="/shop">
-                    Shop
-                    </Link>
-                </div>
+          <div className="min-h-4 hidden lg:flex justify-around  items-center">
+            <img src={logo} alt="Origin Logo" className="max-h-24" />
+    
+            <div className=" bg-greenish w-1/2 min-h-[50px] rounded-xl flex justify-evenly items-center">
+              <Link to="/about"
+                className="text-center font-semibold text-lightcream w-1/3">About us</Link>
+    
+              <Link to="/tree"
+                className="text-center font-semibold text-lightcream w-1/3">Tree</Link>
+    
+              <Link to="/profile"
+                className="text-center font-semibold text-lightcream w-1/3">Profile</Link>
             </div>
-        </div>
-    )
-}
+    
+            <div className="flex space-x-2">
+              <LogOutButton />
+            </div>
+    
+            <div className="flex h-16">
+               <Link to="/shop"><img src={shoppingcart} alt="" /></Link>
+            </div>
+            
+            </div>
+          </div>
+      );
+};
 
-export default DesktopHeader
+export default DesktopHeader;
