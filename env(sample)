@@ -1,0 +1,11 @@
+DATABASE_URL=postgres_db:5432
+DATABASE_NAME=origin_db
+DATABASE_USERNAME=origin_admin
+DATABASE_PASSWORD=origin_password
+
+BACKEND_URL=nodejs_backend
+BACKEND_USERNAME=backend_user
+BACKEND_PASSWORD=backend_password
+
+FRONTEND_PORT=80
+BACKEND_PORT=3000

@@ -1,0 +1,75 @@
+version: '3.8'
+
+services:
+
+  nodejs_frontend: # NodeJS Frontend Webserver
+    build: # Build a NodeJS image with all needed dependencies
+      context: ./frontend # Use this base path for all commands in dockerfile
+      dockerfile: Dockerfile # Specify dockerfile path
+      #working_dir: /app
+   
+    env_file: .env #read environment var values from this file
+    environment:
+      - BACKEND_URL=$BACKEND_URL
+      - BACKEND_USERNAME=$BACKEND_USERNAME
+      - BACKEND_PASSWORD=$BACKEND_PASSWORD
+      - NODE_ENV=development
+    volumes:
+      - ./frontend/src:/app/src
+     
+    command: npm run start
+    ports:
+      - "$FRONTEND_PORT:3000"
+    depends_on:
+       - nodejs_backend # Must be removed when split Frontend/Backend
+      
+    restart: unless-stopped
+    #stdin_open: true # keep open the terminal after building container
+    #tty: true # keep open the terminal after building container
+
+
+  nodejs_backend: # NodeJS Backend Webserver
+    build: # Build a NodeJS image with all needed dependencies
+      context: ./backend # Use this base path for all commands in dockerfile
+      dockerfile: Dockerfile # Specify dockerfile path
+      #working_dir: /usr/app
+    #command: bash -c "npm install && npm run start"
+    env_file: .env #read environment var values from this file
+    environment:
+      - DATABASE_URL=$DATABASE_URL
+      - DATABASE_USERNAME=$DATABASE_USERNAME
+      - DATABASE_PASSWORD=$DATABASE_PASSWORD
+      - NODE_ENV=development
+    volumes:
+      - ./backend/src:/app/src
+     
+    command: npm run dev
+    ports:
+      - "$BACKEND_PORT:3000"
+    # depends_on:
+    #   - nodejs_backend # Must be removed when split Frontend/Backend
+    restart: unless-stopped
+    #stdin_open: true # keep open the terminal after building container
+    #tty: true # keep open the terminal after building container
+    depends_on:
+      - postgres_db
+
+
+  postgres_db: # PostgreSQL Server
+    container_name: postgreSQL_DB
+    image: postgres:15.1
+    volumes:
+      - ./backend/src/db/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    env_file: .env
+    environment:
+      - POSTGRES_DB=$DATABASE_NAME
+      - POSTGRES_USER=$DATABASE_USERNAME
+      - POSTGRES_PASSWORD=$DATABASE_PASSWORD
+    restart: unless-stopped
+
+volumes:
+  node_modules:
+  db_data:
