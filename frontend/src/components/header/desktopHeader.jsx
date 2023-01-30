@@ -14,7 +14,7 @@ const DesktopHeaderLogIn = () => {
         <img src={logo} alt="Origin Logo" className="max-h-24" />
 
         <div className=" bg-greenish w-1/2 min-h-[50px] rounded-xl flex justify-evenly items-center">
-          <Link to="/about"
+          <Link to="/"
             className="text-center font-semibold text-lightcream w-1/3">Home</Link>
 
           <Link to="/about"
