@@ -1,3 +1,5 @@
+import contactImg from "../assets/background/contact.png"
+
 const ContactPage = () => {
     return (
         <div>
@@ -62,7 +64,7 @@ const ContactPage = () => {
                         </form>
                     </div>
                     <div class="lg:col-span-5 relative mt-16">
-                        <img src="images/contact.png" class="" alt="" />
+                        <img src={contactImg} class="" alt="" />
                     </div>
                 </div>
             </section>
