@@ -9,10 +9,6 @@
   src: url(/src/fonts/MontserratAlternates-Medium.ttf);
 }
 
-body {
-  display: flex;
-  justify-content: center;
-}
 
 .mainHeader {
   @apply p-2 font-primaryFont text-xl text-lightcream;
@@ -32,6 +28,16 @@ body {
 
 #root {
   min-width: 100%;
+}
+
+br{
+  display: none;
+}
+
+h2{
+  font-family: 'Righteous', ;
+  font-weight: 400;
+  font-size: 3rem;
 }
 
 .border-gradient {
