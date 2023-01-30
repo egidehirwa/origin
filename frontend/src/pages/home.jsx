@@ -7,7 +7,7 @@ import GoogleButton from "../components/buttons/googleButton";
 import EmailConnexion from "../components/popup/popupConnexion";
 
 // img
-import treeBG from "../assets/background/treeBG.png"
+// import treeBG from "../assets/background/treeBG.png"
 import exempleOfTree from "../assets/background/exempleOfTree.png"
 import originCream from "../assets/originLogos/originCream.png"
 import badgeGoogle from "../assets/socialLogos/badgeGoogle.png"
@@ -17,7 +17,7 @@ import badgeApple from "../assets/socialLogos/badgeApple.svg"
 
 const HomeMobile = () => {
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center mx-auto lg:hidden">
+        <div className="min-h-screen flex flex-col items-center justify-evenly mx-auto lg:hidden">
             <EmailConnexion />
             <div>
                 <img src={originCream} alt="Origin Logo" />
@@ -53,7 +53,7 @@ const HomeDesktop = () => {
                 <h2 className="max-w-1/2">And watch your </h2>
                 <br/>
                 <h2>tree grow over time</h2>
-                <img className="absolute w-[1000px] left-0 right-0 ml-auto mr-auto bottom-0" src={treeBG} alt="background img" />
+                {/* <img className="absolute w-[1000px] left-0 right-0 ml-auto mr-auto bottom-0" src={treeBG} alt="background img" /> */}
 
             </div>
 
