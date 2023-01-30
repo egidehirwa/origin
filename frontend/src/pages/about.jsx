@@ -23,7 +23,7 @@ const AboutPage = ({ logedIn }) => {
 const AboutUs = () => {
   return (
     <div className="bg-lightgreen flex flex-col items-center text-center text-lightcream">
-        <div className="lg:w-1/2 py-12">
+        <div className="lg:w-1/2 py-12 container mx-auto">
       <h2 className="text-center drop-shadow-xl font-semibold text-[50px]">About Us</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
@@ -38,8 +38,8 @@ const AboutUs = () => {
 
 const OurMission = () => {
   return (
-    <div className="flex justify-center flex-wrap">
-        <div className="flex flex-col lg:w-2/3 items-center lg:px-24 lg:py-48 text-center">
+    <div className="flex justify-center flex-wrap container mx-auto">
+        <div className="flex flex-col lg:w-2/3 items-center lg:px-24 lg:py-48 text-center ">
             <h2 className="text-lightcream p-2 font-semibold text-[36px]">Our mission</h2>
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
             similique vero, unde earum placeat ab animi quo aut. Libero, ullam est
@@ -56,10 +56,10 @@ const OurMission = () => {
 const MeetOurTeam = () => {
   return (
     <div className="bg-lightgreen flex flex-col text-center text-lightcream pt-14 pb-24">
-      <h2 className="pb-16 text-center p-2 drop-shadow-xl font-semibold text-[36px]">Meet Our Team</h2>
-      <div className="container flex flex-row">
+      <div className="container mx-auto">
+      <h2 className="pb-16 text-center p-2 drop-shadow-xl font-semibold text-[36px] ">Meet Our Team</h2>
+      <div className="flex flex-row">
       <div className="">
-
         <div className="lg:my-16 md:my-12 flex flex-row ">
             <div className="lg:w-1/2 flex flex-col">
           <h3 className="text-[32px] font-semibold">Jerome</h3>
@@ -78,7 +78,7 @@ const MeetOurTeam = () => {
 
 
         <div className="lg:w-1/2 lg:mt-72 md:my-12">
-          <h3 className="text-[32px] font-semibold">Rose</h3>
+          <h3 className="text-[32px] font-semibold container mx-auto">Rose</h3>
           <p>Front end developer</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
@@ -130,7 +130,8 @@ const MeetOurTeam = () => {
           <img src="" alt="" />
         </div>
       </div>
-    </div>
+      </div>
+      </div>
     </div>
   );
 };
@@ -138,7 +139,7 @@ const MeetOurTeam = () => {
 const OurSponsors = () => {
   return (
     <div className="bg-greenish grid md:grid-cols-1 lg:grid-cols-2 pt-8 pb-12">
-        <div>
+      <div className="container mx-auto">
         <img className="w-[400px] flex items-center" src={sponsors} alt="" />
         <img className="w-[350px] flex items-center" src={sponsors} alt="" />
         <img className="w-[250px] flex items-center" src={sponsors} alt="" />
@@ -146,7 +147,7 @@ const OurSponsors = () => {
         <div className="flex flex-col text-center">
             <h3 className="pb-16 p-2 text-lightcream font-semibold text-[36px] drop-shadow-l">Our Sponsors</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis harum aliquam, officia a laudantium sequi provident ratione animi, error libero quo possimus voluptatem quasi iusto, quidem illum voluptatum aperiam?</p>
-    </div>
+      </div>
     </div>
   );
 };

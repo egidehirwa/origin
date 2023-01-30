@@ -12,7 +12,7 @@ const ShopPage = () => {
             </section>
             <section className="px-10 py-10 relative bg-greenish" id="style"></section>
             <section className=" p-8 relative bg-gradient-to-r from-[#dbe0de] to-[#7b8b7f]">
-                <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 lg:grid-cols-12 p-8">
+                <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 lg:grid-cols-12 p-8 container mx-auto">
                     <div className="lg:col-span-7">
                         <h6 className="p-2 font-primaryFont text-xxl text-darkgreen">Tree Home</h6>
 

@@ -6,12 +6,13 @@ import ProfileAlbumSection from "../components/userProfile/profileAlbumSection";
 const ProfilePage = () => {
   return (
     <div
-      className=" container bg-greenish h-full px-4 space-y-12 py-12"
+      className=" bg-greenish h-full px-4 space-y-12 py-12"
       style={{
         backgroundImage:
           "url(https://i.ibb.co/qBtkHZK/kisspng-tree-of-life-clip-art-tree-vector-png-5aada1b892db02-1-1.png)",
       }}
     >
+    <div className="container mx-auto">
       {/* Intro + Info Container */}
       <div className="space-y-12 md:flex md:flex-row md:items-end gap-8">
         {/* Profile Intro Card */}
@@ -42,6 +43,7 @@ const ProfilePage = () => {
           <ProfileEventCard />
         </div>
       </div>
+    </div>
     </div>
   );
 };
