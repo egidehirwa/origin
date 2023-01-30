@@ -1,4 +1,4 @@
-import { LogInButton, LogOutButton } from "../buttons/buttons";
+import { LogInButton, LogOutButton } from "../buttons/logButton";
 import { ShoppingCartIcon } from "@heroicons/react/24/solid";
 import logo from "../../assets/originLogos/originCream.png";
 import { Link } from "react-router-dom";
@@ -36,7 +36,11 @@ const DesktopHeaderLogIn = () => {
           <LogInButton />
           <div className="flex">
             <ShoppingCartIcon className="h-6 w-6 text-redcream" />
-            <p>Shop</p>
+            <Link
+            to="/shop"
+            className="text-center font-semibold">
+            Shop
+            </Link>
           </div>
         </div>
       </div>
@@ -52,20 +56,17 @@ const DesktopHeaderLogOut = () => {
         <div className=" bg-darkgreen w-1/3 min-h-[50px] rounded-xl flex justify-evenly items-center">
           <Link
             to="/profile"
-            className="text-center font-semibold text-lightcream w-1/3"
-          >
+            className="text-center font-semibold text-lightcream w-1/3">
             Profile
           </Link>
           <Link
             to="/about"
-            className="text-center font-semibold text-lightcream w-1/3 border-lightcream"
-          >
+            className="text-center font-semibold text-lightcream w-1/3 border-lightcream">
             Tree
           </Link>
           <Link
             to="/contact"
-            className="text-center font-semibold text-lightcream w-1/3 border-lightcream"
-          >
+            className="text-center font-semibold text-lightcream w-1/3 border-lightcream">
             Contact us
           </Link>
         </div>
@@ -73,7 +74,12 @@ const DesktopHeaderLogOut = () => {
           <LogOutButton />
           <div className="flex">
             <ShoppingCartIcon className="h-6 w-6 text-redcream" />
-            <p>Shop</p>
+
+            <Link
+            to="/contact"
+            className="text-center font-semibold text-lightcream w-1/3 border-lightcream">
+            Shop
+            </Link>
           </div>
         </div>
       </div>
