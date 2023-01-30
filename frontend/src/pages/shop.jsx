@@ -4,13 +4,13 @@ import shopImg3 from "../assets/background/shop_pic_3.png";
 
 const ShopPage = () => {
     return (
-        <div>
-            <section className="px-20 py-20  relative bg-gradient-to-r from-[#7b8b7f] to-[#7b8b7f]" id="style">
-                <p className=" text-center font-primaryFont text-xl  text-lightcream">
+        <div className="space-y-20">
+            <section className="px-20 py-20 relative bg-gradient-to-r from-[#7b8b7f] to-[#7b8b7f]" id="style">
+                <p className="container mx-auto text-center font-primaryFont text-xl  text-lightcream">
                     Get ready for some unbeatable deals with our exclusive partners - don't miss out!
                 </p>
             </section>
-            <section className="px-10 py-10 relative bg-greenish" id="style"></section>
+
             <section className=" p-8 relative bg-gradient-to-r from-[#dbe0de] to-[#7b8b7f]">
                 <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 lg:grid-cols-12 p-8 container mx-auto">
                     <div className="lg:col-span-7">
@@ -37,10 +37,9 @@ const ShopPage = () => {
                     </div>
                 </div>
             </section>
-            <section className="px-10 py-10 relative bg-greenish" id="style"></section>
 
             <section className=" p-8 relative bg-gradient-to-r from-[#7b8b7f] to-[#dbe0de]">
-                <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 lg:grid-cols-12 p-8">
+                <div className=" container mx-auto grid grid-cols-1 items-center gap-10 md:grid-cols-2 lg:grid-cols-12 p-8">
                     <div className="lg:col-span-5">
                         <div className="relative">
                             <img src={shopImg2} class="" alt="" />
@@ -66,9 +65,9 @@ const ShopPage = () => {
                     </div>
                 </div>
             </section>
-            <section className="px-10 py-10 relative bg-greenish" id="style"></section>
-            <section className=" p-8 relative bg-gradient-to-r from-[#dbe0de] to-[#7b8b7f]">
-                <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 lg:grid-cols-12 p-8">
+
+            <section className="p-8 flex relative bg-gradient-to-r from-[#dbe0de] to-[#7b8b7f]">
+                <div className="container mx-auto grid grid-cols-1 items-center gap-10 md:grid-cols-2 lg:grid-cols-12 p-8">
                     <div className="lg:col-span-7">
                         <h6 className="p-2 font-primaryFont text-xxl text-darkgreen">DNAncestry</h6>
 
@@ -93,7 +92,6 @@ const ShopPage = () => {
                     </div>
                 </div>
             </section>
-            <section className="px-10 py-10 relative bg-greenish" id="style"></section>
         </div>
     );
 };

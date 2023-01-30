@@ -6,7 +6,7 @@ import ProfileAlbumSection from "../components/userProfile/profileAlbumSection";
 const ProfilePage = () => {
   return (
     <div
-      className=" bg-greenish h-full px-4 space-y-12 py-12"
+      className=" bg-greenish lg:px-4 space-y-12 py-12"
       style={{
         backgroundImage:
           "url(https://i.ibb.co/qBtkHZK/kisspng-tree-of-life-clip-art-tree-vector-png-5aada1b892db02-1-1.png)",
