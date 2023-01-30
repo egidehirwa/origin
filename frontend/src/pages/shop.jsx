@@ -1,3 +1,7 @@
+import shopImg1 from "../assets/background/shop_pic_1.png";
+import shopImg2 from "../assets/background/shop_pic_2.png";
+import shopImg3 from "../assets/background/shop_pic_3.png";
+
 const ShopPage = () => {
     return (
         <div>
@@ -28,7 +32,7 @@ const ShopPage = () => {
                     </div>
                     <div className="lg:col-span-5">
                         <div className="relative">
-                            <img src="images/shop_pic_1.png" alt="" />
+                            <img src={shopImg1} class="" alt="" />
                         </div>
                     </div>
                 </div>
@@ -39,7 +43,8 @@ const ShopPage = () => {
                 <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 lg:grid-cols-12 p-8">
                     <div className="lg:col-span-5">
                         <div className="relative">
-                            <img src="images/shop_pic_2.png" alt="" />
+                            <img src={shopImg2} class="" alt="" />
+
                         </div>
                     </div>
                     <div className="lg:col-span-7">
@@ -83,7 +88,7 @@ const ShopPage = () => {
                     </div>
                     <div className="lg:col-span-5">
                         <div className="relative">
-                            <img src="images/shop_pic_3.png" className="" alt="" />
+                            <img src={shopImg3} class="" alt="" />
                         </div>
                     </div>
                 </div>
