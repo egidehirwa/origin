@@ -4,7 +4,7 @@ import FacebookButton from "../components/buttons/facebookButton";
 import GoogleButton from "../components/buttons/googleButton";
 
 // popup
-import EmailConnexion from "../components/popup/popupConnexion";
+import PopupConnexionMobile from "../components/popup/popupConnexion";
 
 // img
 // import treeBG from "../assets/background/treeBG.png"
@@ -17,8 +17,8 @@ import badgeApple from "../assets/socialLogos/badgeApple.svg"
 
 const HomeMobile = () => {
     return (
-        <div className="min-h-screen flex flex-col items-center justify-evenly mx-auto lg:hidden">
-            <EmailConnexion />
+        <div className="min-h-screen flex flex-col items-center justify-center mx-auto space-y-4 lg:hidden">
+            <PopupConnexionMobile />
             <div>
                 <img src={originCream} alt="Origin Logo" />
                 <h1 className="text-xxl font-bold italic bg-gradient-to-br from-creemish to-lightcream bg-clip-text text-transparent ">Let's root together</h1>

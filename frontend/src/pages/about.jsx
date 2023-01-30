@@ -8,7 +8,7 @@ import jerome from "../assets/jerome.png"
 const AboutPage = ({ logedIn }) => {
   return (
     <div className="relative z-0">
-        <img className="absolute rotate-[135deg] opacity-[.10] scale-[1.5] left-[-50px] top-[-100px]" src={bgtree} alt="" />
+        <img className="absolute hidden lg:flex rotate-[135deg] opacity-[.10] scale-[1.5] left-[-50px] top-[-100px]" src={bgtree} alt="" />
       <AboutUs />
       <OurMission />
 
