@@ -1,79 +1,161 @@
+import bgtree from "../assets/bgtree.png";
+import branch from "../assets/branch.png";
+import treeroots from "../assets/treeroots.png";
+import sponsors from "../assets/sponsors.png";
+import rose from "../assets/rose.png";
+import gaston from "../assets/gaston.png";
+import romain from "../assets/romain.png";
+import charlotte from "../assets/charlotte.png";
 
 const AboutPage = ({ logedIn }) => {
-    return (
-        <>
-            <AboutUs />
-            <OurMission />
-            <MeetOurTeam />
-            <OurSponsors />
-        </>
-    )
-}
+  return (
+    <div className="">
+      <img className="absolute rotate-[145deg] opacity-[.10] scale-[2] left-[-150px] top-[-250px]" 
+        src={bgtree} alt="" />
+      <AboutUs />
+      <OurMission />
+      <MeetOurTeam />
+      <OurSponsors />
+    </div>
+  );
+};
 
 const AboutUs = () => {
-    return (
-        <div className="bg-lightgreen flex flex-col items-center text-center text-lightcream pt-28 pb-28">
-            <h2 className="text-center text-3xl">About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet similique vero, unde earum placeat ab animi quo aut. Libero, ullam est hic consequuntur perferendis voluptates magnam error obcaecati quisquam minus?</p>
-        </div>
-    )
-}
+  return (
+    <div className="bg-lightgreen flex flex-col items-center text-center text-lightcream">
+      <div className="lg:w-1/2 py-12 container mx-auto">
+        <h2 className="text-center drop-shadow-xl font-semibold text-[50px]">About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+          similique vero, unde earum placeat ab animi quo aut. Libero, ullam est
+          hic consequuntur perferendis voluptates magnam error obcaecati
+          quisquam minus?
+        </p>
+      </div>
+    </div>
+  );
+};
 
 const OurMission = () => {
-    return (
-        <div className="text-lightcream flex flex-col items-center text-center pt-28 pb-28">
-            <h2>Our mission</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet similique vero, unde earum placeat ab animi quo aut. Libero, ullam est hic consequuntur perferendis voluptates magnam error obcaecati quisquam minus?</p>
-            <img src="./" alt="" />
-        </div>
-    )
-}
+  return (
+    <div className="flex justify-center flex-wrap container mx-auto">
+      <div className="flex flex-col lg:w-2/3 items-center lg:px-24 lg:py-48 text-center ">
+        <h2 className="text-lightcream p-2 font-semibold text-[36px]">Our mission</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+          similique vero, unde earum placeat ab animi quo aut. Libero, ullam est
+          hic consequuntur perferendis voluptates magnam error obcaecati
+          quisquam minus?
+        </p>
+      </div>
+      <div className="flex lg:w-1/3 py-24 items-center">
+        <img className="" src={treeroots} alt="" />
+      </div>
+    </div>
+  );
+};
 
 const MeetOurTeam = () => {
-    return (
-        <div className="bg-lightgreen flex flex-col text-center text-lightcream pt-14 pb-28">
-            <h3 className="pb-16">Meet Our Team</h3>
-            <div className="flex flex-col items-left">
-                <h3>Jerome</h3>
-                <p>Front end developer</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel culpa nam praesentium alias sapiente quibusdam ad, architecto impedit ea possimus maiores aspernatur totam omnis explicabo nulla doloribus delectus dicta! Nemo.</p>
-                <img src="" alt="" />
+  return (
+    <div className="bg-lightgreen text-center text-lightcream">
+        <div className="">
+        <h2 className="py-12 text-center p-2 drop-shadow-xl font-semibold text-[36px]">Meet Our Team</h2>
+
+
+        <img className="absolute hidden lg:flex opacity-[.70] rotate-[350deg] scale-[0.8] left-[-300px] top-[1000px]"
+          src={branch} alt="" />
+        <img className="absolute hidden lg:flex opacity-[.70] scale-[0.8] rotate-[220deg] right-[-300px] top-[1800px]"
+          src={branch} alt="" />
+
+        <div className="container mx-auto">
+
+
+          <div className="lg:mt-[50px] flex flex-wrap justify-center">
+            <div className="scale-[0.8] flex md:justify-start">
+              <img src={rose} alt="" />
             </div>
-            <div className="flex flex-col items-right">
-                <h3>Charlotte</h3>
-                <p>Front end developer</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum magnam accusantium quisquam, cum quia consequatur minima unde reiciendis quis dolorum sint rem aspernatur placeat voluptatibus numquam expedita, molestias animi eum?</p>
-                <img src="" alt="" />
+            <div className="flex flex-col lg:w-1/2 z-0 order-1">
+              <h3 className="text-[32px] font-semibold pb-6">Rose</h3>
+              <p className="">Front end developer</p>
+              <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                impedit doloribus modi? Eos rerum a mollitia eligendi
+                voluptatem, doloremque dolore fugit autem eveniet suscipit, iste
+                hic, nemo facere odio reprehenderit?</p>
             </div>
-            <div>
-                <h3>Rose</h3>
-                <p>Front end developer</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae impedit doloribus modi? Eos rerum a mollitia eligendi voluptatem, doloremque dolore fugit autem eveniet suscipit, iste hic, nemo facere odio reprehenderit?</p>
-                <img src="" alt="" />
+          </div>
+
+
+          <div className="lg:mt-[-70px] md:my-12 flex flex-row flex-wrap justify-center">
+            <div className="flex flex-col lg:w-1/2 z-0">
+              <h3 className="text-[32px] font-semibold pb-6">Charlotte</h3>
+              <p className="pb-2">Front end developer</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+                magnam accusantium quisquam, cum quia consequatur minima unde
+                reiciendis quis dolorum sint rem aspernatur placeat voluptatibus
+                numquam expedita, molestias animi eum?</p>
             </div>
-            <div>
-                <h3>Gaston</h3>
-                <p>Back end developer</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum deleniti et soluta minima aspernatur numquam reprehenderit labore magni commodi, ratione tempora omnis exercitationem dolorem? Obcaecati excepturi omnis sed aliquam illum?</p>
-                <img src="" alt="" />
+            <div className="scale-[0.8]">
+              <img className="items-center" src={charlotte} alt="" />
             </div>
-            <div>
-                <h3>Romain</h3>
-                <p>Back end developer</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae sint voluptas labore eaque natus, porro accusantium autem veritatis saepe corporis error eius ipsa officia, beatae facilis neque magnam veniam velit.</p>
-                <img src="" alt="" />
+          </div>
+
+
+          <div className="lg:mt-[-70px] md:my-12 flex flex-row flex-wrap justify-center">
+            <div className="scale-[0.8]">
+              <img src={gaston} alt="" />
             </div>
+            <div className="flex flex-col lg:w-1/2 z-0">
+              <h3 className="text-[32px] font-semibold pb-6">Gaston</h3>
+              <p className="pb-2">Back end developer</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                deleniti et soluta minima aspernatur numquam reprehenderit
+                labore magni commodi, ratione tempora omnis exercitationem
+                dolorem? Obcaecati excepturi omnis sed aliquam illum?</p>
+            </div>
+          </div>
+
+
+          <div className="lg:mt-[-70px] md:my-12 flex flex-row flex-wrap justify-center">
+            <div className="flex flex-col lg:w-1/2 z-0">
+              <h3 className="text-[32px] font-semibold pb-6">Romain</h3>
+              <p className="pb-2">Back end developer</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Molestiae sint voluptas labore eaque natus, porro accusantium
+                autem veritatis saepe corporis error eius ipsa officia, beatae
+                facilis neque magnam veniam velit.</p>
+            </div>
+            <div className="scale-[0.8]">
+              <img className="md:justify-center" src={romain} alt="" />
+            </div>
+          </div>
+
         </div>
-    )
-}
+        </div>
+      </div>
+  );
+};
 
 const OurSponsors = () => {
-    return (
-        <div className="bg-greenish flex flex-col items-center text-center text-lightcream pt-28 pb-28">
-            <h3>Our Sponsors</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio accusamus eius enim eaque nam cumque, architecto esse deserunt, minus excepturi aperiam commodi error nisi? Assumenda nihil facilis </p>
-        </div>
-    )
-}
+  return (
+    <div className="container mx-auto">
+        <div className="flex flex-row flex-wrap justify-center">
+            <div className="flex flex-col items-center flex lg:w-1/3 py-24">
+                <img className="w-[300px]" src={sponsors} alt="" />
+                <img className="w-[250px]" src={sponsors} alt="" />
+                <img className="w-[200px]" src={sponsors} alt="" />
+             </div>
+            <div className="flex flex-col lg:w-2/3 items-center lg:px-24 lg:py-48 text-center ">
+            <h3 className="pb-16 p-2 text-lightcream font-semibold text-[36px] drop-shadow-l">Our Sponsors</h3>
+            <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+            veritatis harum aliquam, officia a laudantium sequi provident ratione
+            animi, error libero quo possimus voluptatem quasi iusto, quidem illum
+            voluptatum aperiam?
+            </p>
+            </div>
+      </div>
+    </div>
+  );
+};
 
 export default AboutPage;

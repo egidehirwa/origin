@@ -1,5 +1,12 @@
 import { EnvelopeIcon } from "@heroicons/react/24/solid"
-import { emailConnexionEvent } from "../.././events/emailConnexionEvent"
+// import { emailConnexionEvent } from "../.././events/emailConnexionEvent"
+
+const emailConnexionEvent = () => {
+    const popUpScreen = document.querySelector('#popup')
+    popUpScreen.classList.add("showConnexion");
+
+
+}
 
 const EmailButton = () => {
     return (

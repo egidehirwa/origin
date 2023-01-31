@@ -1,13 +1,13 @@
-const popUpScreen = document.getElementById('popup')
 // const loginButton = document.getElementById('login')
 
 const emailConnexionEvent = () => {
-
+    const popUpScreen = document.querySelector('#popup')
     popUpScreen.classList.add("showConnexion");
 
 }
 
 const backHome = () => {
+    const popUpScreen = document.querySelector('#popup')
     popUpScreen.classList.remove("showConnexion")
 }
 
