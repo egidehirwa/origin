@@ -30,11 +30,11 @@
   min-width: 100%;
 }
 
-br{
+br {
   display: none;
 }
 
-h2{
+h2 {
   font-family: 'Righteous', ;
   font-weight: 400;
   font-size: 3rem;
@@ -58,4 +58,8 @@ h2{
 
 .showConnexion {
   top: 0;
+}
+
+.showRegister {
+  right: 0;
 }
