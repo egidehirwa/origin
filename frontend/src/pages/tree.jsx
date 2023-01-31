@@ -29,7 +29,7 @@ const TreePage = () => {
                         <div className="relative">
                             <form action="#" className="space-y-10">
                                 <div>
-                                    <label for="info" className="block mb-2 text-sm font-secondaryFont text-creemish ">
+                                    <label htmlFor="info" className="block mb-2 text-sm font-secondaryFont text-creemish ">
                                         Relatives Type{" "}
                                     </label>
                                     <input
@@ -41,7 +41,7 @@ const TreePage = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label for="info" className="block mb-2 text-sm font-secondaryFont text-creemish ">
+                                    <label htmlFor="info" className="block mb-2 text-sm font-secondaryFont text-creemish ">
                                         First Name
                                     </label>
                                     <input
@@ -53,7 +53,7 @@ const TreePage = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label for="info" className="block mb-2 text-sm font-secondaryFont text-creemish  ">
+                                    <label htmlFor="info" className="block mb-2 text-sm font-secondaryFont text-creemish  ">
                                         Last Name
                                     </label>
                                     <input
@@ -65,7 +65,7 @@ const TreePage = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label for="info" className="block mb-2 text-sm font-secondaryFont text-creemish  ">
+                                    <label htmlFor="info" className="block mb-2 text-sm font-secondaryFont text-creemish  ">
                                         Year of Birth
                                     </label>
                                     <input
@@ -77,7 +77,7 @@ const TreePage = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label for="info" className="block mb-2 text-sm font-secondaryFont text-creemish ">
+                                    <label htmlFor="info" className="block mb-2 text-sm font-secondaryFont text-creemish ">
                                         Country of Birth
                                     </label>
                                     <input
@@ -88,7 +88,7 @@ const TreePage = () => {
                                         required
                                     />
                                 </div>
-                                <label for="info" className="block mb-2 text-sm font-secondaryFont text-creemish" data-headlessui-state="open">
+                                <label htmlFor="info" className="block mb-2 text-sm font-secondaryFont text-creemish" data-headlessui-state="open">
                                     If your relative is alive, leave the box below blank.{" "}
                                 </label>
 
@@ -99,7 +99,7 @@ const TreePage = () => {
                                     value=""
                                     className="w-4 h-4 text-greenish  border-gray-300 rounded accent-white checked focus:ring-creemish "
                                 />
-                                <label for="info" className=" p-2 mb-2 text-sm font-secondaryFont text-creemish " data-headlessui-state="open">
+                                <label htmlFor="info" className=" p-2 mb-2 text-sm font-secondaryFont text-creemish " data-headlessui-state="open">
                                     Not alive.
                                 </label>
                                 <div style={{ display: checked ? "block" : "none" }}>

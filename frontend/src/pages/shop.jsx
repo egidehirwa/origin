@@ -32,7 +32,7 @@ const ShopPage = () => {
                     </div>
                     <div className="lg:col-span-5">
                         <div className="relative">
-                            <img src={shopImg1} class="" alt="" />
+                            <img src={shopImg1} alt="decorative" />
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@ const ShopPage = () => {
                 <div className=" container mx-auto grid grid-cols-1 items-center gap-10 md:grid-cols-2 lg:grid-cols-12 p-8">
                     <div className="lg:col-span-5">
                         <div className="relative">
-                            <img src={shopImg2} class="" alt="" />
+                            <img src={shopImg2} alt="decorative" />
 
                         </div>
                     </div>
@@ -87,7 +87,7 @@ const ShopPage = () => {
                     </div>
                     <div className="lg:col-span-5">
                         <div className="relative">
-                            <img src={shopImg3} class="" alt="" />
+                            <img src={shopImg3} alt="decorative" />
                         </div>
                     </div>
                 </div>
