@@ -1,5 +1,5 @@
 const EventsPage = () => {
-    return <h1>Events Page</h1>
+    return <h1 className="container mx-auto">Events Page</h1>
 }
 
 export default EventsPage;

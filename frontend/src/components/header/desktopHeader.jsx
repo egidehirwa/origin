@@ -1,4 +1,4 @@
-import { LogInButton, LogOutButton } from "../buttons/buttons";
+import { LogInButton, LogOutButton } from "../buttons/logButton";
 import logo from "../../assets/originLogos/originCream.png";
 import { Link } from "react-router-dom";
 import shoppingcart from "../../assets/shoppingcart.png";
@@ -46,3 +46,4 @@ const DesktopHeaderLogOut = () => {
 };
 
 export default DesktopHeader;
+
