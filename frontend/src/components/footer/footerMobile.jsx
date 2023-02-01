@@ -1,19 +1,19 @@
-import { CalendarDaysIcon, RectangleGroupIcon, ShoppingCartIcon, UserIcon } from '@heroicons/react/24/solid'
+import { RectangleGroupIcon, ShoppingCartIcon, UserIcon } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom';
 
 
 const FooterMobile = () => {
     return (
-        <div className=" bg-darkgreen shadow-[0_-15px_15px_-2px_hsla(157,12%,35%,0.5)] rounded-t-[15px] lg:hidden">
-            <nav className="text-lightcream/30 p-1 flex justify-center space-x-3 ">
+        <div className=" bg-darkgreen pb-2 pt-4 shadow-[0_-15px_15px_-2px_hsla(157,12%,35%,0.5)] rounded-t-[15px] lg:hidden fixed bottom-0 w-full">
+            <nav className="text-lightcream/30 flex justify-center space-x-8 ">
                 <Link to="/about" className="focus:text-lightcream flex flex-col items-center">
                     <RectangleGroupIcon className="h-5 w-5" />
                     About
                 </Link>
-                <Link to="/events" className="focus:text-lightcream flex flex-col items-center">
+                {/* <Link to="/events" className="focus:text-lightcream flex flex-col items-center">
                     <CalendarDaysIcon className="h-5 w-5" />
                     Event   
-                </Link>
+                </Link> */}
                 <Link to="/tree" className="focus:text-lightcream flex flex-col items-center">
                     <i className="fa-brands fa-pagelines h-5 w-5"></i>
                     Tree

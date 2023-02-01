@@ -3,8 +3,8 @@ import contactImg from "../assets/background/contact.png";
 const ContactPage = () => {
     return (
         <div>
-            <section className="p-8 relative bg-gradient-to-r from-[#7b8b7f] to-[#7b8b7f] " id="contact_page">
-                <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-12 p-8 ">
+            <section className="p-8 container mx-auto relative bg-gradient-to-r from-[#7b8b7f] to-[#7b8b7f] " id="contact_page">
+                <div className=" grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-12 p-8 ">
                     <div className="lg:col-span-7">
                         <h6 className="p-2 font-primaryFont text-xxl text-lightcream">Contact Us</h6>
 

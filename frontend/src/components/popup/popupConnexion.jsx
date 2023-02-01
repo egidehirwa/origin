@@ -4,9 +4,9 @@ import { backHome } from "../../events/emailConnexionEvent"
 // import handleSubmit from "../../events/handleSubmit";
 
 
-const EmailConnexion = () => {
+const PopupConnexionMobile = () => {
     return (
-        <div id="popup" className="bg-darkgreen space-y-10 min-w-full min-h-full top-[-100%] left-0 absolute flex flex-col justify-center items-center">
+        <div id="popup" className="bg-darkgreen space-y-10 min-w-full min-h-full top-[-100%] left-0 transition-[100] absolute flex flex-col justify-center items-center">
             <ArrowLeftIcon id="toHome" className="h-[1.5rem] absolute top-5 left-4" onClick={backHome} />
 
             <h1>Log in to <span className="font-bold text-xl">Origin</span></h1>
@@ -30,4 +30,4 @@ const EmailConnexion = () => {
     )
 }
 
-export default EmailConnexion;
+export default PopupConnexionMobile;

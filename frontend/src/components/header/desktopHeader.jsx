@@ -1,7 +1,7 @@
-import { LogInButton, LogOutButton } from "../buttons/buttons";
-import { ShoppingCartIcon } from "@heroicons/react/24/solid";
+import { LogInButton, LogOutButton } from "../buttons/logButton";
 import logo from "../../assets/originLogos/originCream.png";
 import { Link } from "react-router-dom";
+import shoppingcart from "../../assets/shoppingcart.png";
 
 const DesktopHeader = ({ logedIn }) => {
   return logedIn ? <DesktopHeaderLogOut /> : <DesktopHeaderLogIn />;
@@ -9,34 +9,18 @@ const DesktopHeader = ({ logedIn }) => {
 
 const DesktopHeaderLogIn = () => {
   return (
-    <div>
-      <div className="min-h-4 hidden lg:flex justify-around  items-center">
+    <div className="bg-lightgreen text-lightcream">
+      <div className="container mx-auto min-h-4 hidden lg:flex justify-around items-center">
         <img src={logo} alt="Origin Logo" className="max-h-24" />
-        <div className=" bg-darkgreen w-1/3 min-h-[50px] rounded-xl flex justify-evenly items-center">
-          <Link
-            to="/"
-            className="text-center font-semibold text-lightcream w-1/3"
-          >
-            Home
-          </Link>
-          <Link
-            to="/about"
-            className="text-center font-semibold text-lightcream w-1/3 border-lightcream"
-          >
-            About us
-          </Link>
-          <Link
-            to="/contact"
-            className="text-center font-semibold text-lightcream w-1/3 border-lightcream"
-          >
-            Contact us
-          </Link>
+        <div className="bg-darkgreen w-2/4 min-h-[50px] rounded-xl flex items-center text-center font-semibold divide-x-2 divide-lightcream">
+          <Link to="/" className="w-1/3">Home</Link>
+          <Link to="/about" className="w-1/3">About us</Link>
+          <Link to="/contact" className="w-1/3">Contact us</Link>
         </div>
-        <div className="flex items-left space-x-2">
+        <div className="flex space-x-6 items-center">
           <LogInButton />
           <div className="flex">
-            <ShoppingCartIcon className="h-6 w-6 text-redcream" />
-            <p>Shop</p>
+            <Link to="/shop"><img src={shoppingcart} alt=""></img></Link>
           </div>
         </div>
       </div>
@@ -46,35 +30,17 @@ const DesktopHeaderLogIn = () => {
 
 const DesktopHeaderLogOut = () => {
   return (
-    <div className="bg-lightgreen">
-      <div className="min-h-4 hidden lg:flex justify-around  items-center">
-        <img src={logo} alt="Origin Logo" className="max-h-24" />
-        <div className=" bg-darkgreen w-1/3 min-h-[50px] rounded-xl flex justify-evenly items-center">
-          <Link
-            to="/profile"
-            className="text-center font-semibold text-lightcream w-1/3"
-          >
-            Profile
-          </Link>
-          <Link
-            to="/about"
-            className="text-center font-semibold text-lightcream w-1/3 border-lightcream"
-          >
-            Tree
-          </Link>
-          <Link
-            to="/contact"
-            className="text-center font-semibold text-lightcream w-1/3 border-lightcream"
-          >
-            Contact us
-          </Link>
-        </div>
-        <div className="flex items-left space-x-2">
-          <LogOutButton />
-          <div className="flex">
-            <ShoppingCartIcon className="h-6 w-6 text-redcream" />
-            <p>Shop</p>
-          </div>
+    <div className="bg-lightgreen min-h-4 hidden lg:flex justify-around items-center text-lightcream">
+      <img src={logo} alt="Origin Logo" className="max-h-24" />
+      <div className="bg-darkgreen w-2/4 min-h-[50px] rounded-xl flex items-center text-center font-semibold">
+        <Link to="/about" className="w-1/3">About us</Link>
+        <Link to="/tree" className="w-1/3">Tree</Link>
+        <Link to="/profile" className="w-1/3">Profile</Link>
+      </div>
+      <div className="flex space-x-2">
+        <LogOutButton />
+        <div className="flex">
+          <Link to="/shop"><img src={shoppingcart} alt=""></img></Link>
         </div>
       </div>
     </div>
@@ -82,3 +48,4 @@ const DesktopHeaderLogOut = () => {
 };
 
 export default DesktopHeader;
+
