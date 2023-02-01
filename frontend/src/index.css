@@ -26,6 +26,10 @@
   @apply pl-10 font-secondaryFont text-creemish;
 }
 
+html {
+  background-color: #4F645C;
+}
+
 #root {
   min-width: 100%;
 }
@@ -48,7 +52,6 @@ h2 {
 
 .gradient-red {
   border-image-source: linear-gradient(163deg, rgba(164, 100, 108, 1) 0%, rgba(218, 194, 162, 1) 100%);
-  border-radius: 50px;
 }
 
 .gradient-green {
@@ -56,10 +59,16 @@ h2 {
   border-radius: 50px;
 }
 
-.showConnexion {
-  top: 0;
-}
+.registerMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.showRegister {
-  right: 0;
+  background-color: #4F645C;
+
+  position: absolute;
+  top: 0;
+  left: -1;
+  width: 100%;
+  height: 100%;
 }

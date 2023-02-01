@@ -9,11 +9,11 @@ const RootLayout = ({ logedIn }) => {
       <header className="lg:mb-10 z-10">
         <DesktopHeader logedIn={logedIn} />
       </header>
-      <main className="">
+      <main >
         < Outlet />
       </main>
       <footer className="z-10">
-        < FooterMobile />s
+        < FooterMobile />
         < FooterDesktop />
       </footer>
     </div>

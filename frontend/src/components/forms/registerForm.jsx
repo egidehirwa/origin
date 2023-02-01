@@ -1,10 +1,13 @@
-import { ArrowLeftIcon } from "@heroicons/react/24/solid";
-import { handleHideRegisterPopup } from "../../events/handlePopup"
+// events
+import { XMarkIcon } from "@heroicons/react/24/solid";
+import { handleClickClose } from "../../events/handleclickSign";
 import { handleSubmitRegister } from "../../events/handleSubmitForm";
 
-const PopupRegisterMobile = () => {
+const RegisterForm = () => {
     return (
-        <div id="showHideRegisterPopup" className="bg-darkgreen space-y-5 min-w-full min-h-full absolute right-[-100%] transition-all flex flex-col justify-center items-center">
+        <div id="registerPage" className="space-y-5 min-w-1/4 hidden lg:flex flex-col justify-center items-center relative">
+
+            <XMarkIcon className="absolute top-4 right-4 h-10 block lg:hidden" onClick={handleClickClose} />
 
             <h1 className="border-gradient gradient-red w-full max-w-1/2 p-2 text-center">Register to <span className="font-bold text-xl">Origin</span></h1>
 
@@ -38,17 +41,10 @@ const PopupRegisterMobile = () => {
                     <label htmlFor="passwordRegister">Password</label>
                     <input className="bg-inherit" type="password" placeholder="Enter your password" id="passwordRegister" name="password" />
                 </div>
-
-                <div className="w-full relative flex justify-center">
-                    < ArrowLeftIcon id="toConnect" className="h-[1.5rem] absolute bottom-0 left-0" onClick={handleHideRegisterPopup} />
-                    <input id="register" className="max-w-fit px-8 rounded-full bg-gradient-to-br from-lightcream to-creemish text-darkgreen hover:bg-gradient-to-br hover:from-darkgreen hover:to-lightgreen hover:shadow hover:shadow-lightcream hover:border-lightcream hover:text-lightcream hover:cursor-pointer transition duration-200 " type="submit" onClick={handleSubmitRegister} value="Register" />
-                </div>
+                <input id="register" className="max-w-fit px-8 rounded-full bg-gradient-to-br from-lightcream to-creemish text-darkgreen hover:cursor-pointer" type="submit" onClick={handleSubmitRegister} value="Register" />
             </form>
-
-
-
         </div>
     )
 }
 
-export default PopupRegisterMobile;
+export default RegisterForm;

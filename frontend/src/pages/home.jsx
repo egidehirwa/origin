@@ -3,22 +3,18 @@ import EmailButton from "../components/buttons/emailButton";
 import FacebookButton from "../components/buttons/facebookButton";
 import GoogleButton from "../components/buttons/googleButton";
 
-// popup
-import PopupConnexionMobile from "../components/popup/popupConnexion";
-import PopupSignMobile from "../components/popup/popupRegister";
-
 // img
 // import treeBG from "../assets/background/treeBG.png"
 import exempleOfTree from "../assets/background/exempleOfTree.png"
 import originCream from "../assets/originLogos/originCream.png"
 import badgeGoogle from "../assets/socialLogos/badgeGoogle.png"
 import badgeApple from "../assets/socialLogos/badgeApple.svg"
+import ConnexionPage from "./connexion";
 
 const HomeMobile = () => {
     return (
         <div className="min-h-screen flex flex-col items-center justify-center mx-auto space-y-4 lg:hidden">
-            <PopupConnexionMobile />
-            <PopupSignMobile />
+            <ConnexionPage />
             <div>
                 <img src={originCream} alt="Origin Logo" />
                 <h1 className="text-xxl font-bold italic bg-gradient-to-br from-creemish to-lightcream bg-clip-text text-transparent ">Let's root together</h1>

@@ -14,6 +14,7 @@ import TreePage from "./pages/tree";
 import EventsPage from "./pages/events";
 import ShopPage from "./pages/shop";
 import LegalPolicyPage from "./pages/legalPolicy";
+import ConnexionPage from "./pages/connexion";
 
 
 const router = createBrowserRouter(
@@ -27,6 +28,7 @@ const router = createBrowserRouter(
             <Route path="/events" element={<EventsPage />} />
             <Route path="/shop" element={<ShopPage />} />
             <Route path="/legalPolicy" element={<LegalPolicyPage />} />
+            <Route path="/connexion" element={<ConnexionPage />} />
         </Route>
     )
 )

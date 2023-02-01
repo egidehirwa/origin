@@ -10,6 +10,7 @@ const DesktopHeader = ({ logedIn }) => {
 const DesktopHeaderLogIn = () => {
   return (
     <div className="bg-lightgreen text-lightcream">
+
       <div className="container mx-auto min-h-4 hidden lg:flex justify-around items-center z-50">
         <img src={logo} alt="Origin Logo" className="max-h-24" />
         <div className="bg-darkgreen w-2/4 min-h-[50px] rounded-xl flex items-center text-center font-semibold">
@@ -20,7 +21,7 @@ const DesktopHeaderLogIn = () => {
         <div className="flex space-x-2">
           <LogInButton />
           <div className="flex">
-            <Link to="/shop"><img src={shoppingcart} alt=""></img></Link>
+            <Link to="/shop"><img className="h-10" src={shoppingcart} alt=""></img></Link>
           </div>
         </div>
       </div>

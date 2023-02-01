@@ -33,7 +33,7 @@ const FooterMobileStyle = () => {
 const FooterMobile = () => {
     const location = useLocation();
 
-    if (location.pathname !== '/') {
+    if (location.pathname !== '/' && location.pathname !== '/connexion') {
         return <FooterMobileStyle />
     }
 }
