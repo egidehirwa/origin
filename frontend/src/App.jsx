@@ -1,6 +1,7 @@
 import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from "react-router-dom";
 import RootLayout from "./layouts/rootLayout";
 
+// pages
 import HomePage from "./pages/home";
 import AboutPage from "./pages/about";
 import ContactPage from "./pages/contact";
@@ -9,6 +10,9 @@ import TreePage from "./pages/tree";
 import EventsPage from "./pages/events";
 import ShopPage from "./pages/shop";
 import LegalPolicyPage from "./pages/legalPolicy";
+import ConnexionPage from "./pages/connexion";
+
+// connect to API
 import axios from "axios";
 
 axios.defaults.baseURL = "http://localhost:4000"; //database /herouku paste here
@@ -24,6 +28,7 @@ const router = createBrowserRouter(
             <Route path="/events" element={<EventsPage />} />
             <Route path="/shop" element={<ShopPage />} />
             <Route path="/legalPolicy" element={<LegalPolicyPage />} />
+            <Route path="/connexion" element={<ConnexionPage />} />
         </Route>
     )
 );
