@@ -1,9 +1,4 @@
-import {
-    createBrowserRouter,
-    Route,
-    createRoutesFromElements,
-    RouterProvider
-} from "react-router-dom"
+import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from "react-router-dom";
 import RootLayout from "./layouts/rootLayout";
 
 import HomePage from "./pages/home";
@@ -14,7 +9,9 @@ import TreePage from "./pages/tree";
 import EventsPage from "./pages/events";
 import ShopPage from "./pages/shop";
 import LegalPolicyPage from "./pages/legalPolicy";
+import axios from "axios";
 
+axios.defaults.baseURL = "http://localhost:4000"; //database /herouku paste here
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -29,12 +26,10 @@ const router = createBrowserRouter(
             <Route path="/legalPolicy" element={<LegalPolicyPage />} />
         </Route>
     )
-)
+);
 
 function App() {
-    return (
-        <RouterProvider router={router} />
-    )
+    return <RouterProvider router={router} />;
 }
 
 export default App;

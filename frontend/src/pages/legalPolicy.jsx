@@ -5,9 +5,9 @@ const LegalPolicyPage = () => {
 
     return (
         <div>
-            <section class="px-10 py-10 relative bg-gradient-to-r from-[#7b8b7f] to-[#7b8b7f]" id="style">
-                <h6 class=" p-2 text-center font-primaryFont text-xxl text-darkgreen">Legal Policy</h6>
-                <p class=" text-center font-secondaryFont text-base text-lightcream">
+            <section className="px-10 py-10 relative bg-gradient-to-r from-[#7b8b7f] to-[#7b8b7f]" id="style">
+                <h6 className=" p-2 text-center font-primaryFont text-xxl text-darkgreen">Legal Policy</h6>
+                <p className=" text-center font-secondaryFont text-base text-lightcream">
                     When utilizing our services, you are entrusting us with your personal information. We acknowledge the gravity of this responsibility and
                     make every effort to safeguard your information while also giving you control over it. This Privacy Policy is designed to provide you with
                     an understanding of the information we collect, the reasons behind it, and the ways in which you can manage, export, update, and delete your
@@ -15,10 +15,10 @@ const LegalPolicyPage = () => {
                 </p>
             </section>
 
-            <div class="container px-5 py-24 mx-auto">
-                <div class="xl:w-1/1.2 lg:w-3/4 w-full mx-auto ">
-                    <p class="p-2 font-secondaryFont text-base text-lightcream ">
-                        <ol class=" whitespace-pre-line list-decimal list-inside text-center leading-8 	">
+            <div className="container px-5 py-24 mx-auto">
+                <div className="xl:w-1/1.2 lg:w-3/4 w-full mx-auto ">
+                    <p className="p-2 font-secondaryFont text-base text-lightcream ">
+                        <ol className=" whitespace-pre-line list-decimal list-inside text-center leading-8 	">
                             <p>
                                 This Privacy Statement sets out how Origin processes your personal data which you provide to us or which we obtain through our
                                 website(s). This Privacy Statement was last amended on 4 January 2023. We may amend this Privacy Statement from time to time
@@ -96,7 +96,7 @@ const LegalPolicyPage = () => {
                         </ol>
                     </p>
                 </div>
-                <div class="flex items-center justify-center mt-10">
+                <div className="flex items-center justify-center mt-10">
                     <button className="btn rounded-md px-4 py-4  bg-darkgreen text-lightcream hover:bg-creemish " onClick={() => navigate("/")}>
                         Turn Home Page{" "}
                     </button>
