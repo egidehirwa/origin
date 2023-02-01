@@ -5,6 +5,8 @@ const LegalPolicyPage = () => {
 
     return (
         <div>
+            <section className="px-10 py-10 relative bg-greenish" id="style"></section>
+
             <section className="px-10 py-10 relative bg-gradient-to-r from-[#7b8b7f] to-[#7b8b7f]" id="style">
                 <div className="container mx-auto">
                     <h6 className=" p-2 text-center font-primaryFont text-xxl text-darkgreen">Legal Policy</h6>
