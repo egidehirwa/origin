@@ -139,7 +139,7 @@ const OurSponsors = () => {
   return (
     <div className="container mx-auto">
       <div className="flex flex-row flex-wrap justify-center">
-        <div className="flex flex-col items-center flex lg:w-1/3 py-24">
+        <div className="flex flex-col items-center lg:w-1/3 py-24">
           <img className="w-[300px]" src={sponsors} alt="" />
           <img className="w-[250px]" src={sponsors} alt="" />
           <img className="w-[200px]" src={sponsors} alt="" />
