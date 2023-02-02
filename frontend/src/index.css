@@ -26,15 +26,19 @@
   @apply pl-10 font-secondaryFont text-creemish;
 }
 
+html {
+  background-color: #4F645C;
+}
+
 #root {
   min-width: 100%;
 }
 
-br{
+br {
   display: none;
 }
 
-h2{
+h2 {
   font-family: 'Righteous', ;
   font-weight: 400;
   font-size: 3rem;
@@ -48,7 +52,6 @@ h2{
 
 .gradient-red {
   border-image-source: linear-gradient(163deg, rgba(164, 100, 108, 1) 0%, rgba(218, 194, 162, 1) 100%);
-  border-radius: 50px;
 }
 .bg-gradient-red {
   background: linear-gradient(163deg, rgba(164, 100, 108, 1) 0%, rgba(218, 194, 162, 1) 100%);
@@ -60,6 +63,16 @@ h2{
   border-radius: 50px;
 }
 
-.showConnexion {
+.registerMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #4F645C;
+
+  position: absolute;
   top: 0;
+  left: -1;
+  width: 100%;
+  height: 100%;
 }

@@ -1,16 +1,9 @@
 import { EnvelopeIcon } from "@heroicons/react/24/solid"
-// import { emailConnexionEvent } from "../.././events/emailConnexionEvent"
-
-const emailConnexionEvent = () => {
-    const popUpScreen = document.querySelector('#popup')
-    popUpScreen.classList.add("showConnexion");
-
-
-}
+import { handleClickLogin } from "../../events/handleclickSign"
 
 const EmailButton = () => {
     return (
-        <button className="bg-darkgreen min-w-full p-2 px-8 rounded-3xl" onClick={emailConnexionEvent}>
+        <button className="bg-darkgreen min-w-full p-2 px-8 rounded-3xl" onClick={handleClickLogin}>
             <div className="flex justify-center space-x-2">
                 <EnvelopeIcon className="max-h-[1.5rem]" />
                 <p>Continue with <span className=" font-bold text-m">Email</span></p>

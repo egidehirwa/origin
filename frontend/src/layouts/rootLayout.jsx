@@ -10,7 +10,7 @@ const RootLayout = ({ logedIn }) => {
       <header className="lg:mb-0">
         <DesktopHeader logedIn={logedIn} />
       </header>
-      <main className="">
+      <main >
         < Outlet />
       </main>
         <BackToTopButton />
