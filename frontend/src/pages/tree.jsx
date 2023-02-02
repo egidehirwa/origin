@@ -1,4 +1,4 @@
-import TreeForm from "../components/treeForm";
+import TreeForm from "../components/forms/treeForm";
 
 const TreePage = () => {
     return (

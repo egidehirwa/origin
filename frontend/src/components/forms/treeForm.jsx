@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import axios from "axios";
+import axios from "axios";
 
 const TreeForm = () => {
     // const [checked, setChecked] = useState(false);
@@ -11,7 +11,7 @@ const TreeForm = () => {
     const [lastName, setLastName] = useState("");
     const submitInfo = (ev) => {
         ev.preventDefault();
-        // axios.post("/tree", { name, lastName });
+        axios.post("/tree", { name, lastName });
         // axios.get("/test");
     };
 

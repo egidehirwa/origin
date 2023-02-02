@@ -13,9 +13,9 @@ import LegalPolicyPage from "./pages/legalPolicy";
 import ConnexionPage from "./pages/connexion";
 
 // connect to API
-// import axios from "axios";
+import axios from "axios";
 
-// axios.defaults.baseURL = "http://localhost:4000"; //database /herouku paste here
+axios.defaults.baseURL = "http://localhost:4000"; //database /herouku paste here
 
 const router = createBrowserRouter(
     createRoutesFromElements(
