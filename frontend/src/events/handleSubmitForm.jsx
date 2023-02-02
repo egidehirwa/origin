@@ -1,7 +1,7 @@
 
 function handleSubmitConnect(e) {
     e.preventDefault();
-    console.log('You clicked submit.');
+    console.log(e.target)
 }
 
 function handleSubmitRegister(e) {
