@@ -1,4 +1,4 @@
-import bgtree from "../assets/bgtree.png";
+import treeBG from "../assets/background/treeBG.png";
 import branch from "../assets/branch.png";
 import treeroots from "../assets/treeroots.png";
 import sponsors from "../assets/sponsors.png";
@@ -10,8 +10,8 @@ import charlotte from "../assets/charlotte.png";
 const AboutPage = ({ logedIn }) => {
   return (
     <div className="">
-      <img className="absolute rotate-[145deg] opacity-[.10] scale-[2] left-[-150px] top-[-250px]" 
-        src={bgtree} alt="" />
+      <img className="absolute rotate-[135deg] left-[-350px] top-[-500px]" 
+        src={treeBG} alt="" />
       <AboutUs />
       <OurMission />
       <MeetOurTeam />
