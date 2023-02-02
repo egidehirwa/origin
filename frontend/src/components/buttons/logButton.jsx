@@ -1,28 +1,34 @@
 import { Link } from "react-router-dom";
 
+// Not used : 
 
-const Buttons = () => {
-    return (
-        <>
-        <LogInButton/>
-        <LogOutButton/>
-        </>
-    )
-}
+// const Buttons = () => {
+//     return (
+//         <>
+//             <LogInButton />
+//             <LogOutButton />
+//         </>
+//     )
+// }
 
 const LogInButton = () => {
     return (
-            <button className="bg-gradient-red lg px-12 min-h-[50px] font-semibold text-darkgreen items-center">
-           <Link to="/profile">LogIn</Link>
-            </button>
-    )
-}
-const LogOutButton = () => {
-    return (
-        <button className="bg-gradient-red lg px-12 min-h-[50px] font-semibold text-darkgreen items-center">
-        <Link to="/">LogOut</Link>
-         </button>
+        <button className="border-gradient gradient-red min-w-[80px] max-h-[50px] px-2">
+            <Link to="/connexion">
+                LogIn
+            </Link>
+        </button>
     )
 }
 
-export {Buttons, LogInButton, LogOutButton }
+const LogOutButton = () => {
+    return (
+        <div>
+            <Link to="/" className="border-gradient gradient-red px-4">LogOut</Link>
+            {/* need to add a logic to actually disconnect the person from the plateform */}
+            <img src="" alt="" />
+        </div>
+    )
+}
+
+export { LogInButton, LogOutButton }
