@@ -9,18 +9,18 @@ async function handleSubmitConnect(e, email, password, authentificated, setAuthe
     if (response === 'error') {
         console.log('connection of user failed')
         // set authentificated state to false (default)
-        return setAuthentificated(true)
-        // console.log('failed')
-        // console.log(authentificated)
 
-        // return setAuthentificated(false)
+        console.log('failed')
+        console.log(authentificated)
+        return setAuthentificated(true)
     } else {
         console.log('connection of user succeded')
         // set authentificated state to true (default valuer is false -> false a false value = true ) 
         // (and allow connection and redirection to profile)
+
+        console.log('succeded')
+        console.log(authentificated)
         return setAuthentificated(false)
-        // console.log('succeded')
-        // console.log(authentificated)
     }
 
 }
