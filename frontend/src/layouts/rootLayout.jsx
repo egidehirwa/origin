@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import FooterMobile from "../components/footer/footerMobile";
 import FooterDesktop from "../components/footer/footerDesktop";
 import DesktopHeader from "../components/header/desktopHeader";
+import BackToTopButton from "../components/buttons/backToTop"
 
 const RootLayout = ({ logedIn }) => {
   return (
