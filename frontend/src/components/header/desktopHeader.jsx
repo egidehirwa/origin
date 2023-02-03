@@ -23,9 +23,9 @@ const DesktopHeaderLogIn = () => {
           <div className="flex">
             <Link to="/shop"><img className="h-10" src={shoppingcart} alt=""></img></Link>
           </div>
-          </div>
         </div>
       </div>
+    </div>
   );
 };
 
