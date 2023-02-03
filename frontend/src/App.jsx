@@ -15,7 +15,7 @@ import ConnexionPage from "./pages/connexion";
 // connect to API
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:4000"; //database /herouku paste here
+axios.defaults.baseURL = "https://origin-app.herokuapp.com/"; //database /herouku paste here
 
 const router = createBrowserRouter(
     createRoutesFromElements(
