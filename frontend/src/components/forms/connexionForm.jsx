@@ -37,7 +37,7 @@ const ConnexionForm = () => {
             </form>
 
             <div className="flex space-x-4">
-                <Link to="/tree" className="focus:text-lightcream border-2 border-purple-600 p-3">
+                <Link to="/tree" className="focus:text-lightcream border-2 border-cyan-500 p-3">
                     Tree
                 </Link>
 
