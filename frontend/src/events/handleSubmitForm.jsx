@@ -1,28 +1,24 @@
 import axios from "axios";
 
 // connection
-async function handleSubmitConnect(e, email, password, authentificated, setAuthentificated) {
+async function handleSubmitConnect(e, email, password, setAuthentificated, navigate) {
 
     e.preventDefault();
     const response = await userLogin(email, password)
 
     if (response === 'error') {
         console.log('connection of user failed')
+        navigate("/connexion")
         // set authentificated state to false (default)
-
-        console.log('failed')
-        console.log(authentificated)
-        return setAuthentificated(true)
+        return setAuthentificated(false)
     } else {
         console.log('connection of user succeded')
-        // set authentificated state to true (default valuer is false -> false a false value = true ) 
-        // (and allow connection and redirection to profile)
+        setAuthentificated(true)
 
-        console.log('succeded')
-        console.log(authentificated)
-        return setAuthentificated(false)
+        navigate("/profile")
+        // set authentificated state to true
+        return setAuthentificated(true)
     }
-
 }
 
 async function userLogin(email, password) {
@@ -37,7 +33,6 @@ async function userLogin(email, password) {
     } else {
         return 'connect'
     }
-
 }
 
 // Registration
