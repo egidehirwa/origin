@@ -9,10 +9,14 @@ const TreeForm = () => {
 
     const [name, setName] = useState("");
     const [lastName, setLastName] = useState("");
+
     const submitInfo = (ev) => {
         ev.preventDefault();
-        axios.post("/tree", { name, lastName });
-        // axios.get("/test");
+        axios.post("https://origin-app.herokuapp.com/tree", {
+            name: name,
+            lastName: lastName,
+        });
+        console.log("lalala its working lalala zombies are real llalalal");
     };
 
     return (
