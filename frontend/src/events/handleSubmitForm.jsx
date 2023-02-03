@@ -3,7 +3,7 @@ import axios from "axios";
 // connection
 function handleSubmitConnect(e, email, password) {
     e.preventDefault();
-    // console.log(email, password)
+    console.log(email, password)
 
     userLogin(email, password)
 }
