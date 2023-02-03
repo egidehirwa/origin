@@ -15,7 +15,7 @@ const LogInButton = () => {
     return (
         <button className="border-gradient gradient-red min-w-[80px] max-h-[50px] px-2">
             <Link to="/connexion">
-                LogIn
+                Log In
             </Link>
         </button>
     )
