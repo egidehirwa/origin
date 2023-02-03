@@ -37,7 +37,7 @@ const RegisterForm = () => {
 
                 <div className="w-full border-b-2 flex flex-col">
                     <label htmlFor="birthday">Date of Birth</label>
-                    <input className="bg-inherit" type="date" defaultValue="2000-01-01" placeholder="Enter your date of birth" id="birthday" name="birthday" onChange={(e) => setBirthday(e.target.value)} />
+                    <input className="bg-inherit" type="date" defaultValue={birthday} placeholder="Enter your date of birth" id="birthday" name="birthday" onChange={(e) => setBirthday(e.target.value)} />
                 </div>
 
                 <div className="w-full border-b-2 flex flex-col">

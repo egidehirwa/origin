@@ -13,7 +13,7 @@ import LegalPolicyPage from "./pages/legalPolicy";
 import ConnexionPage from "./pages/connexion";
 
 // connect to API
-import axios from "axios";
+// import axios from "axios";
 
 // axios.defaults.baseURL = "https://origin-app.herokuapp.com/"; //database /herouku paste here
 
