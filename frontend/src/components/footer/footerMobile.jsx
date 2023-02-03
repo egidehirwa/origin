@@ -1,8 +1,7 @@
 import { RectangleGroupIcon, ShoppingCartIcon, UserIcon } from '@heroicons/react/24/solid'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-
-const FooterMobile = () => {
+const FooterMobileStyle = () => {
     return (
         <div className=" bg-darkgreen pb-2 pt-4 shadow-[0_-15px_15px_-2px_hsla(157,12%,35%,0.5)] rounded-t-[15px] lg:hidden fixed bottom-0 w-full">
             <nav className="text-lightcream/30 flex justify-center space-x-8 ">
@@ -29,6 +28,14 @@ const FooterMobile = () => {
             </nav>
         </div >
     );
+}
+
+const FooterMobile = () => {
+    const location = useLocation();
+
+    if (location.pathname !== '/' && location.pathname !== '/connexion') {
+        return <FooterMobileStyle />
+    }
 }
 
 export default FooterMobile;

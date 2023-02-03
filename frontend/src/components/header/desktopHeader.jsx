@@ -11,12 +11,12 @@ const DesktopHeaderLogIn = () => {
   return (
       <div className="bg-lightgreen min-h-4 hidden lg:flex justify-around items-center text-lightcream">
         <img src={logo} alt="Origin Logo" className="max-h-24" />
-        <div className="bg-darkgreen w-2/4 min-h-[50px] rounded-xl flex items-center text-center font-semibold">
-          <Link to="/" className="w-1/3">Home</Link>
-          <Link to="/about" className="w-1/3">About us</Link>
-          <Link to="/contact" className="w-1/3">Contact us</Link>
+        <div className="bg-darkgreen w-2/4 min-h-[50px] rounded-xl flex items-center text-center font-semibold divide-x-2 divide-lightcream">
+          <Link to="/" className="w-1/3 z-10">Home</Link>
+          <Link to="/about" className="w-1/3 z-10">About us</Link>
+          <Link to="/contact" className="w-1/3 z-10">Contact us</Link>
         </div>
-        <div className="flex space-x-2">
+        <div className="flex space-x-6 items-center">
           <LogInButton />
           <div className="flex">
             <Link to="/shop"><img src={shoppingcart} alt=""></img></Link>
@@ -30,12 +30,12 @@ const DesktopHeaderLogOut = () => {
   return (
     <div className="bg-lightgreen min-h-4 hidden lg:flex justify-around items-center text-lightcream">
         <img src={logo} alt="Origin Logo" className="max-h-24" />
-        <div className="bg-darkgreen w-2/4 min-h-[50px] rounded-xl flex items-center text-center font-semibold">
-          <Link to="/about" className="w-1/3">About us</Link>
-          <Link to="/tree" className="w-1/3">Tree</Link>
-          <Link to="/profile" className="w-1/3">Profile</Link>
+        <div className="bg-darkgreen w-2/4 min-h-[50px] rounded-xl flex items-center text-center font-semibold divide-x-2 divide-lightcream">
+          <Link to="/about" className="w-1/3 z-10">About us</Link>
+          <Link to="/tree" className="w-1/3 z-10">Tree</Link>
+          <Link to="/profile" className="w-1/3 z-10">Profile</Link>
         </div>
-        <div className="flex space-x-2">
+        <div className="flex space-x-6 items-center">
           <LogOutButton />
           <div className="flex">
             <Link to="/shop"><img src={shoppingcart} alt=""></img></Link>
@@ -46,4 +46,3 @@ const DesktopHeaderLogOut = () => {
 };
 
 export default DesktopHeader;
-
