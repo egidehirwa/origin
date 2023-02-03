@@ -12,7 +12,7 @@ const RootLayout = ({ logedIn }) => {
       <main >
         < Outlet />
       </main>
-      <footer className="z-10">
+      <footer className="z-12">
         < FooterMobile />
         < FooterDesktop />
       </footer>
