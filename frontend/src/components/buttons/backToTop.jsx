@@ -21,7 +21,7 @@ const BackToTopButton = () => {
     <>
       {showButton && (
         <button
-          className="fixed bottom-0 right-0 mb-6 mr-6 p-4 bg-greenish text-white rounded-full shadow-lg hover:bg-darkgreen"
+          className="fixed bottom-0 right-0 mb-6 mr-6 p-4 bg-gradient-red text-white rounded-full shadow-lg hover:bg-darkgreen"
           onClick={handleClick}
         >
           Back to Top
