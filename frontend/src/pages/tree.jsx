@@ -1,4 +1,6 @@
 import TreeForm from "../components/forms/treeForm";
+import Tree from "../components/tree/treeComponent";
+
 
 const TreePage = () => {
     return (
@@ -16,9 +18,8 @@ const TreePage = () => {
             <section className=" p-10 relative ">
                 <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 lg:grid-cols-12 p-8">
                     <div className="lg:col-span-10">
-                        <div className="p-2  relative bg-gradient-to-r from-[#7b8b7f] to-[#7b8b7f]">
-                            Family tree will be here.
-                            <br></br>Width will increase according to content
+                        <div className="p-2 relative bg-gradient-to-r from-[#7b8b7f] to-[#7b8b7f] min-w-full min-h-full">
+                            <Tree />
                         </div>
                     </div>
 

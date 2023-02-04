@@ -22,7 +22,7 @@ async function userLogin(email, password) {
             email: email,
             password: password
         })
-        // console.log(response)
+        console.log(response)
         if (response.data.error) {
             return 'error'
         } else {
@@ -34,14 +34,11 @@ async function userLogin(email, password) {
 }
 
 // Registration
-
 function handleSubmitRegister(e, email, password, firstName, lastName, birthday, country) {
     e.preventDefault();
     // console.log(firstName, lastName, birthday, country, email, password );
 
     // 1] Create user by adding email and password to database
-    // verify that email adress is not already existing
-
     userRegister(email, password)
 
     // 3] Create user profile by adding the rest of the infos there
