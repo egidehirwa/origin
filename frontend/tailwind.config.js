@@ -32,10 +32,10 @@ module.exports = {
             colors: {
                 darkgreen: "#394843",
                 greenish: "#4F645C",
+                lightgreen: "#7b8b7f",
                 peps: "#5E3239",
                 creemish: "#DAC2A2",
                 lightcream: "#EBE3D5",
-                lightgreen: "#7b8b7f",
             },
             borderRadius: {
                 default: "4px",
