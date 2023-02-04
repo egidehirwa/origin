@@ -15,7 +15,7 @@ const RegisterForm = () => {
     const [country, setCountry] = useState('')
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('')
-
+    // console.log(firstName, lastName, birthday, country)
 
     return (
         <div id="registerPage" className="space-y-5 min-w-1/4 hidden lg:flex flex-col justify-center items-center relative">
@@ -24,7 +24,7 @@ const RegisterForm = () => {
 
             <h1 className="border-gradient gradient-red w-full max-w-1/2 p-2 text-center">Register to <span className="font-bold text-xl">Origin</span></h1>
 
-            <form className="space-y-5 flex flex-col items-center w-full max-w-1/2" onSubmit={(e) => handleSubmitRegister(e, email, password)}>
+            <form className="space-y-5 flex flex-col items-center w-full max-w-1/2" onSubmit={(e) => handleSubmitRegister(e, email, password, firstName, lastName, birthday, country)}>
                 <div className="w-full border-b-2 flex flex-col">
                     <label htmlFor="firtsName">First Name</label>
                     <input className="bg-inherit" type="text" placeholder="Enter your firts name" value={firstName} id="firtsName" name="firtsName" onChange={(e) => setFirstName(e.target.value)} />
@@ -37,7 +37,7 @@ const RegisterForm = () => {
 
                 <div className="w-full border-b-2 flex flex-col">
                     <label htmlFor="birthday">Date of Birth</label>
-                    <input className="bg-inherit" type="date" defaultValue="2000-01-01" placeholder="Enter your date of birth" id="birthday" name="birthday" onChange={(e) => setBirthday(e.target.value)} />
+                    <input className="bg-inherit" type="date" defaultValue='01/01/2000' placeholder="Enter your date of birth" id="birthday" name="birthday" onChange={(e) => setBirthday(e.target.value)} />
                 </div>
 
                 <div className="w-full border-b-2 flex flex-col">
