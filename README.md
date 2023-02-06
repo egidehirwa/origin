@@ -61,7 +61,7 @@ Origin documentation is [available here](https://www.google.com)
 
 # Licence
 
-re-frame is [BECODE licenced](https://becode.org/)
+[BECODE licenced](https://becode.org/)
 
 ---
 
