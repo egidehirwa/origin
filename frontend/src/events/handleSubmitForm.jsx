@@ -11,7 +11,7 @@ async function handleSubmitConnect(e, email, password, authentificated, setAuthe
         navigate("/connexion")
     } else {
         console.log('connection of user succeded')
-        // navigate("/profile/:id")
+        navigate("/profile/:id")
     }
     return setAuthentificated(response !== 'error')
 }
