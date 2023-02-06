@@ -8,24 +8,25 @@
 </p>
 
 <p align="center">
-<a href="#familyTree">Family Tree</a> &nbsp;&bull;&nbsp;
-<a href="#documentation">Documentation</a> &nbsp;&bull;&nbsp;
-<a href="#gettingHelp">Getting Help</a> &nbsp;&bull;&nbsp;
-<a href="#lience">Licence</a> &nbsp;&bull;&nbsp;
-<a href="#getToKnowUs">Get to Know Us</a>
+<a href="#origin"> Origin Family Tree App </a> &nbsp;&bull;&nbsp;
+<a href="#documentation"> Documentation </a> &nbsp;&bull;&nbsp;
+<a href="#tech"> Tech </a> &nbsp;&bull;&nbsp;
+<a href="#help"> Help </a> &nbsp;&bull;&nbsp;
+<a href="#licence"> Licence </a> &nbsp;&bull;&nbsp;
+<a href="#us" >Get to Know Us </a>
 
 </p>
 
 ---
 
-## Every family has a special story
+# Origin
 
 
 Family Tree is an innovative application that helps you discover your ancestry and connect with distant relatives. With the help of DNA records, this application builds a detailed family tree that not only displays your immediate family members but also your distant relatives. The application is easy to use and provides a visual representation of your family's history. With Family Tree, you can get a better understanding of your heritage and learn about the stories and traditions that have been passed down through generations. Whether you are a seasoned genealogist or just starting to explore your family history, Family Tree has everything you need to build a comprehensive family tree and connect with distant relatives. Start your journey today and uncover the story of your family!
 
 ---
 
-## Documentation
+# Documentation
 
 
 Origin documentation is [available here](https://www.google.com)
@@ -33,7 +34,7 @@ Origin documentation is [available here](https://www.google.com)
 
 ---
 
-## Tech
+# Tech
 
 
 - React
@@ -52,28 +53,29 @@ Origin documentation is [available here](https://www.google.com)
 ---
 
 
-## Getting Help
+# Help
 
 [Get help on our Website](https://origin-bcode.netlify.app/contact)
 
 ---
 
-## Licence
+# Licence
 
-re-frame is [BECODE licenced](license.txt)
+re-frame is [BECODE licenced](https://becode.org/)
 
 ---
 
-## Get to Know Us
+# Us
 
 <p align="center">
 <a href="https://www.linkedin.com/in/nad%C3%A8ge-hombergen-baa124171/">Nadège Hombergen</a> &nbsp;&bull;&nbsp;
 <a href="https://www.linkedin.com/in/audric-de-trez/">Audric De Trez</a> &nbsp;&bull;&nbsp;
 <a href="https://www.linkedin.com/in/munise-ben/">Munise Ben</a> &nbsp;&bull;&nbsp;
 <a href="https://www.linkedin.com/in/daria-spodina-64096a233/">Daria Spodina </a> &nbsp;&bull;&nbsp;
-<a href=https://www.linkedin.com/in/gael-mukendi-kabongo/">Gael Mukendi Kabongo
-</a> &nbsp;&bull;&nbsp;
+<a href="https://www.linkedin.com/in/gael-mukendi-kabongo/">Gael Mukendi Kabongo </a> &nbsp;&bull;&nbsp;
 <a href="https://www.linkedin.com/in/egidehirwa/">Egide Hirwa</a>
 </p>
 
----
+
+
+
