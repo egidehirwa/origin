@@ -13,7 +13,7 @@ import LegalPolicyPage from "./pages/legalPolicy";
 import ConnexionPage from "./pages/connexion";
 
 // connect to API
-import axios from "axios";
+// import axios from "axios";
 
 // axios.defaults.baseURL = "https://origin-app.herokuapp.com/"; //database /herouku paste here
 
@@ -24,6 +24,7 @@ const router = createBrowserRouter(
             <Route path="/about" element={<AboutPage logedIn={true} />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/profile/:id" element={<ProfilePage />} />
             <Route path="/tree" element={<TreePage />} />
             <Route path="/events" element={<EventsPage />} />
             <Route path="/shop" element={<ShopPage />} />

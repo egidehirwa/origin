@@ -53,6 +53,7 @@ h2 {
 .gradient-red {
   border-image-source: linear-gradient(163deg, rgba(164, 100, 108, 1) 0%, rgba(218, 194, 162, 1) 100%);
 }
+
 .bg-gradient-red {
   background: linear-gradient(163deg, rgba(164, 100, 108, 1) 0%, rgba(218, 194, 162, 1) 100%);
   border-radius: 10px;
@@ -76,3 +77,38 @@ h2 {
   width: 100%;
   height: 100%;
 }
+
+/* Tree */
+
+#tree>svg {
+  background-color: #EBE3D5;
+}
+
+svg.hugo .node.male>rect {
+  fill: #7b8b7f;
+}
+
+svg.hugo .node.female>rect {
+  fill: #7b8b7f;
+}
+
+.field_0 {
+  font-family: Impact;
+  text-transform: uppercase;
+  fill: #cfcfcf;
+}
+
+.field_1 {
+  fill: blue;
+}
+
+
+/*  
+    <linearGradient id="hugo_grad_female" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF8024;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF46A3;stop-opacity:1" />
+    </linearGradient>
+*/
+/* 
+    <stop offset="0%" style="stop-color:#00D3A5;stop-opacity:1" />
+    <stop offset="100%" style="stop-color:#00A7D4;stop-opacity:1" /> */
