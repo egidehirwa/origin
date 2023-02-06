@@ -22,7 +22,7 @@ async function userLogin(email, password) {
             email: email,
             password: password
         })
-        console.log(response)
+        // console.log(response)
         if (response.data.error) {
             return 'error'
         } else {
@@ -53,7 +53,7 @@ async function userRegister(email, password) {
         email: email,
         password: password
     })
-    console.log(responseRegister)
+    // console.log(responseRegister)
     console.log('Send user to DB')
 }
 
@@ -69,7 +69,7 @@ async function userProfile(firstName, lastName, birthday, country) {
         place_of_birth: country,
     })
 
-    console.log(responsePofile)
+    // console.log(responsePofile)
     console.log('Add profile infos')
 }
 
