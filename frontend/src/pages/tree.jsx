@@ -1,4 +1,4 @@
-import TreeForm from "../components/forms/treeForm";
+// import TreeForm from "../components/forms/treeForm";
 import Tree from "../components/tree/treeComponent";
 
 
@@ -15,20 +15,20 @@ const TreePage = () => {
             </section>
             <section className="px-10 py-10 relative bg-greenish" id="style"></section>
 
-            <section className=" p-10 relative ">
-                <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 lg:grid-cols-12 p-8">
-                    <div className="lg:col-span-10">
-                        <div className="p-2 relative bg-gradient-to-r from-[#7b8b7f] to-[#7b8b7f] min-w-full min-h-full">
-                            <Tree />
-                        </div>
-                    </div>
-
+            <section className=" p-10 relative min-h-screen ">
+                {/* <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 lg:grid-cols-12 p-8"> */}
+                {/* <div className="lg:col-span-10">
+                    <div className="p-2 relative bg-gradient-to-r from-[#7b8b7f] to-[#7b8b7f] min-w-full min-h-full"> */}
+                <Tree />
+                {/* </div>
+                </div> */}
+                {/* 
                     <div className="lg:col-span-2">
                         <div className="relative">
                             <TreeForm />
                         </div>
-                    </div>
-                </div>
+                    </div> */}
+                {/* </div> */}
             </section>
         </div>
     );
